@@ -1,0 +1,53 @@
+body {
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+
+header,
+footer {
+  padding: 1rem;
+  background-color: #afbba6;
+  text-align: center;
+  height: auto;
+}
+
+img {
+  float: right;
+  width: 200px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 2px solid #000000;
+  margin-right: 20px;
+}
+
+h2,
+ul {
+  margin-left: 10px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 760px;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #2b1401;
+}
+
+footer a {
+  color: #000000;
+}
