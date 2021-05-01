@@ -6,15 +6,16 @@ body {
 
 header,
 footer {
-  padding: 1rem;
+  padding: 1rem 0px 1rem 0px;
   background-color: hsl(94, 13%, 69%);
   text-align: center;
   height: auto;
   width: 100%;
 }
 
-img {
+header img {
   height: auto;
+  margin-right: 16px;
 }
 
 h1 {

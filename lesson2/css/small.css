@@ -1,40 +1,57 @@
 /* phone or baseline view */
 
+h1 {
+  font-size: 2.5em;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  line-height: 1.7em;
+}
 div h2 {
-    color: white;
-    background-color: hsl(27, 95%, 9%);
-    width: 100%;
-    margin: -10px 0px 0px -10px;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    padding: 5px;
-    padding-right: 15px;
+  color: white;
+  background-color: hsl(27, 95%, 9%);
+  width: 100%;
+  margin: -10px 0px 0px -10px;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  padding: 5px;
+  padding-right: 15px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 body {
-    line-height: 1.4em;
+  line-height: 1.4em;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .dp-column {
-    background-color: hsl(28, 28%, 87%);
-    padding: 10px;
-    border: 1px solid hsl(27, 95%, 9%);
-    margin-top: 16px;
-    margin-left: 23px;
+  background-color: hsl(28, 28%, 87%);
+  padding: 10px;
+  border: 1px solid hsl(27, 95%, 9%);
+  margin-top: 16px;
 }
 
 div img {
-    margin-top: 16px;
-    border: 1px solid hsl(27, 95%, 9%);
-    width: 100%;
+  margin-top: 16px;
+  border: 1px solid hsl(27, 95%, 9%);
+  width: 100%;
 }
 
 div {
-    border-radius: 7px;
+  border-radius: 7px;
+}
+
+a {
+    color: hsl(27, 95%, 9%);
+}
+
+a:visited {
+    color:hsl(27, 95%, 9%);
 }
