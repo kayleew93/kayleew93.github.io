@@ -48,10 +48,10 @@ div {
   border-radius: 7px;
 }
 
-a {
+main a {
     color: hsl(27, 95%, 9%);
 }
 
-a:visited {
+main a:visited {
     color:hsl(27, 95%, 9%);
 }
