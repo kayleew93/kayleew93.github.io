@@ -1,0 +1,21 @@
+@media only screen and (min-width: 32.5em) {
+    img {
+        float: right;
+    }
+    h1 {
+        font-size: 3.2em;
+        font-family: 'Montserrat', Helvetica, sans-serif;
+      }
+      h2 {
+        font-size: 1.8em;
+        border-bottom: 2px solid hsl(0, 0%, 0%);
+        margin-right: 20px;
+      }
+      header,
+      footer {
+        border-radius: 5px;
+      }
+      img {
+        float: right;
+      }
+}
