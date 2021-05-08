@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        display: flex;
+        margin-bottom: 1.2rem;
+        justify-content: space-around;
+    }
+    nav ul li {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 100%;
+    }
+    main {
+        padding: 0 .5rem 0 .5rem;
+    }
+}
