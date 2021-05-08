@@ -91,6 +91,10 @@ td {
     overflow-x: scroll;
 }
 
+table tr a {
+    color: black;
+}
+
 .color-scheme tr:nth-child(1) td:nth-child(2) {
     background-color: #05547E;
     color: #FFFFFF;
