@@ -6,7 +6,6 @@ body {
 
 header,
 footer {
-  padding: 1rem 0px 1rem 0px;
   background-color: hsl(94, 13%, 69%);
   text-align: center;
   height: auto;

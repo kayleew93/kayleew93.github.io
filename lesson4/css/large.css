@@ -5,17 +5,16 @@
     display: none;
   }
 
-  nav ul {
-    margin-left: 2%;
-    flex-direction: row;
-  }
-
   nav ul.hide {
-    display: block;
+    display: flex;
+    padding-left: .5rem;
+    text-align: center;
   }
 
   nav ul li {
     /*float: left;*/
+    display: block;
+    flex: 1 1 auto;
   }
 
   nav ul li a {
