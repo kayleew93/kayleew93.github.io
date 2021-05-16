@@ -4,6 +4,11 @@ body {
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 header,
 footer {
   background-color: hsl(94, 13%, 69%);

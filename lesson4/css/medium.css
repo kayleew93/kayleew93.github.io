@@ -3,8 +3,23 @@
     header {
         align-items: center;
         width: 100%;
+        display: flex;
     }
-    header div {
 
+    .primaryNav {
+        display: flex;
+    }
+
+    .primaryNav li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .primaryNav a {
+        text-align: center;
+    }
+
+    .primaryNav li:first-child {
+        display: none;
     }
 }
