@@ -2,7 +2,7 @@
   background-color: #f5ac25;
   font-size: 1.5rem;
   text-align: center;
-  padding: .1rem 0 .1rem;
+  padding: 0.1rem 0 0.1rem;
   background: linear-gradient(#f1dfac, #f5ac25);
   display: none;
 }
@@ -43,7 +43,7 @@ header img {
 }
 
 .motto {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-style: italic;
   padding-left: 1rem;
 }
@@ -167,8 +167,8 @@ img {
 }
 
 .article {
-  background-color: #EBF8FE;
-  border: 1px solid #B1E1FC;
+  background-color: #ebf8fe;
+  border: 1px solid #b1e1fc;
   padding: 1rem;
 }
 
@@ -179,7 +179,7 @@ img {
 }
 
 .contact {
-  background-color: #FDF1D8;
+  background-color: #fdf1d8;
   padding: 1.3rem;
   margin-top: 2rem;
 }
