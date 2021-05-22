@@ -21,6 +21,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 1rem 0 1rem;
+  display: inline-flex;
 }
 
 .headings {
@@ -37,8 +38,8 @@ footer {
 }
 
 header img {
-  height: 100%;
-  padding-left: 1rem;
+  width: 30px;
+  height: auto;
 }
 
 .motto {
@@ -163,10 +164,6 @@ h3 {
 
 img {
   width: 100%;
-}
-
-header img {
-  width: 75px;
 }
 
 .article {

@@ -1,6 +1,5 @@
 /* Desktop view */
 @media only screen and (min-width: 80em) {
-
   button {
     display: none;
   }
@@ -18,17 +17,19 @@
 
   nav ul li a {
     border: none;
-    border-right: 1px solid rgba(0, 0, 0, .3);
-}
-
-header img {
-  width: 100px;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-.motto {
-  font-size: .9rem;
-}
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
+
+  header img {
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .motto {
+    font-size: 0.9rem;
+  }
+
+}
