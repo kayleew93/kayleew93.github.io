@@ -4,6 +4,14 @@
         display: flex;
     }
 
+    header img {
+        padding: 0;
+    }
+
+    .motto {
+        padding-left: 0;
+    }
+
     .primaryNav {
         display: flex;
     }
@@ -22,6 +30,52 @@
     }
 
     h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
+        padding-left: 0rem;
     }
+
+    .forecastheading {
+        display: block;
+      }
+
+    .stats {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        margin: 0;
+    }
+
+    .weekforecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border: 2px solid #05547e;
+        margin-bottom: 2rem;
+        grid-gap: 1px;
+      }
+
+      .article img {
+          float: right;
+          margin: 1rem;
+      }
+      
+      .dayofweek {
+        background-color: #05547e;
+        text-align: center;
+        color: white;
+      }
+      
+      .weekforecast p {
+        text-align: center;
+      }
+      
+      .weathericon {
+        max-width: 64px;
+        margin: auto;
+      }
+
+      .contactinfo {
+        float: right;
+        margin-right: 10em;
+      }
+
 }

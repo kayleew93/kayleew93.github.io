@@ -13,19 +13,20 @@ mainnav.classList.remove('hide')};
 const datefield = document.querySelector("date");
 
 const now = new Date();
+
 const fulldate = new Intl.DateTimeFormat("en-US", {dateStyle: "full" }).format(now);
 datefield.textContent = fulldate;
 
 /* Pancake Banner */
-const date = new Date();
-const day = date.getDay();
+/* Old test that works
+
+const day = now.getDay();
 
 console.log(day);
-
-if (day != 5) {
-    document.querySelector('.pancake_banner').style.display = "none";
-}
 
 if (date.getDay() == 5) {
     document.querySelector('.pancake_banner').style.display = "block";
 }
+*/
+
+let pancakebanner = (now.getDay() == 5) ? document.querySelector('.pancake_banner').style.display = "block": document.querySelector('.pancake_banner').style.display = "none";
