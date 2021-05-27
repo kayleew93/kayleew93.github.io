@@ -8,9 +8,10 @@
       name="description"
       content="Assignment portal for Kaylee Murray in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
     />
-    <link rel="stylesheet" href="css/normalize.css"> <!-- https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css -->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="/css/small.css" />
     <link rel="stylesheet" href="/css/medium.css" />
   </head>
@@ -21,11 +22,23 @@
     </header>
     <h2>WDD 230: Assignment Portal</h2>
     <ul>
-      <li>Lesson 02: <a href="/lesson2/design-principles.html">Design Principles Document</a></li>
-      <li>Lesson 03: <a href="/lesson3/index.html">Website Planning Document</a></li>
-      <li>Lesson 04: <a href="/lesson4/preston-4.html">Preston Town Page</a></li>
-      <li>Lesson 05: <a href="/lesson5/bom.html">DOM Manipulation - Book of Mormon List</a></li>
-      <li>Lesson 05: <a href="/lesson5/preston-5.html">Preston Town Page</a></li>
+      <li>
+        Lesson 02:
+        <a href="/lesson2/design-principles.html">Design Principles Document</a>
+      </li>
+      <li>
+        Lesson 03: <a href="/lesson3/index.html">Website Planning Document</a>
+      </li>
+      <li>
+        Lesson 04: <a href="/lesson4/preston-4.html">Preston Town Page</a>
+      </li>
+      <li>
+        Lesson 05:
+        <a href="/lesson5/bom.html">DOM Manipulation - Book of Mormon List</a>
+      </li>
+      <li>
+        Lesson 05: <a href="/lesson5/preston-5.html">Preston Town Page</a>
+      </li>
     </ul>
     <footer>
       &copy; <span id="theyear"></span> | Kaylee Murray | Utah |
@@ -35,5 +48,13 @@
       <p>Last Updated: <span id="lastmod"></span></p>
     </footer>
     <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Montserrat", "Source Sans Pro"]
+        },
+      });
+    </script>
   </body>
 </html>
