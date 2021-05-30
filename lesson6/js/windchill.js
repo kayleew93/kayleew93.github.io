@@ -10,7 +10,7 @@ function windChill(tempF, windSpeed) {
     0.4275 * tempF * Math.pow(windSpeed, 0.16);
 
   document.querySelector("#windchill").innerHTML =
-    output.toFixed(2) + "&#176;F";
+    output.toFixed(1) + "&#176;F";
 }
 
 let wind_chill =
