@@ -1,8 +1,11 @@
 body {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
-    
+    text-align: center; 
+}
+
+h1 {
+    margin-bottom: 5rem;
 }
 
 img[data-src] {
@@ -12,7 +15,7 @@ img[data-src] {
 img {
     display: block;
     margin: 0 auto;
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
     filter: blur(0em);
     transition: filter 0.5s;
 }
