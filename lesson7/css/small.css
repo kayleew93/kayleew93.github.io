@@ -107,6 +107,8 @@ h1 {
 h2 {
   font-size: 2.5rem;
   margin: 0 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 h1,
@@ -214,10 +216,16 @@ img[data-src] {
   grid-template-columns: 1fr;
 }
 
+figure {
+  margin: 10px 10px 50px 10px;
+  box-shadow: 0 0 10px #888;
+  background-color: #e7e5e2;
+}
+
 figcaption {
   color: #05547e;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-weight: bold;
 }
 
 figure img {
@@ -226,7 +234,7 @@ figure img {
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
