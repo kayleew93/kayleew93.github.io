@@ -9,7 +9,6 @@ function onVisited(historyItem) {
 window.History.onVisited.addListener(onVisited);
 */
 
-let lastVisit = 0;
 
 window.onload = function() {
 
@@ -32,7 +31,7 @@ window.onload = function() {
 
         newVisit = newVisitDate.getTime();
 
-        if (lastVisit != 0) {
+        if (typeof lastVisit != "undefined") {
             // outputs number of days since last visit
             document.querySelector(".lastvisit").innerText = daysBetween(newVisit, lastVisit);
 
