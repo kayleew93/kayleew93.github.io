@@ -199,6 +199,31 @@ footer {
   padding: 1rem 0 1rem;
   text-align: center;
 }
+/*--------- Gallery CSS ----------*/
+img[data-src] {
+  filter: blur(0.3em);
+}
+
+.galleryimg {
+  filter: blur(0em);
+  transition: filter 2s;
+}
+
+.galleryimgs {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+figcaption {
+  color: #05547e;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+figure img {
+  width: 100%;
+}
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

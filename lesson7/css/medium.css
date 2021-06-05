@@ -78,4 +78,10 @@
     float: right;
     margin-right: 10em;
   }
+
+/*----------- Gallery-7 ----------*/
+.galleryimgs {
+  grid-template-columns: 1fr 1fr;
+  }
+
 }
