@@ -55,6 +55,7 @@ window.onload = function() {
         document.querySelector(".lastvisit").innerText = "First visit! Welcome!";
 
         // DELETE LATER -- CHECKS TO MAKE SURE VALUE WAS REASSIGNED
+        console.log(lastVisit);
         console.log(localStorage.getItem("recentVisit"));
 
     }} else {
