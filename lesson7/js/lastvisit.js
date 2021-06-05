@@ -30,6 +30,10 @@ window.onload = function() {
         let newVisitDate = new Date();
 
         newVisit = newVisitDate.getTime();
+        
+        // DELETE LATER: TESTING
+        console.log("What is the value of last visit");
+        console.log(typeof lastVisit);
 
         if (typeof lastVisit != "undefined") {
             // outputs number of days since last visit
@@ -40,9 +44,6 @@ window.onload = function() {
 
             // Store recent visit
             localStorage.setItem("recentVisit", lastVisit);
-
-            // DELETE LATER -- CHECKS TO MAKE SURE VALUE WAS REASSIGNED
-            console.log(localStorage.getItem("recentVisit"));
 
         } else {
 
