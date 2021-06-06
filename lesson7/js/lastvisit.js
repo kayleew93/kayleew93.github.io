@@ -21,12 +21,13 @@ window.onload = function() {
         let newVisitDate = new Date();
 
         newVisit = newVisitDate.getTime();
-        
+
         // DELETE LATER: TESTING
         console.log("What is the value of last visit");
         console.log(typeof lastVisit);
+        console.log(typeof localStorage.getItem("lrecentVisit"));
 
-        if (typeof lastVisit != "undefined") {
+        if (typeof localStorage.getItem("recentVisit") != "string") {
             // outputs number of days since last visit
             document.querySelector(".lastvisit").innerText = daysBetween(newVisit, lastVisit);
 
@@ -38,17 +39,17 @@ window.onload = function() {
 
         } else {
 
-        let lastVisit = newVisit;
+            let lastVisit = newVisit;
 
-        // Store recent visit
-        localStorage.setItem("recentVisit", lastVisit);
+            // Store recent visit
+            localStorage.setItem("recentVisit", lastVisit);
 
-        document.querySelector(".lastvisit").innerText = "First visit! Welcome!";
+            document.querySelector(".lastvisit").innerText = "First visit! Welcome!";
 
-        // DELETE LATER -- CHECKS TO MAKE SURE VALUE WAS REASSIGNED
-        console.log(lastVisit);
-        console.log(localStorage.getItem("recentVisit"));
-        console.log(typeof lastVisit);
+            // DELETE LATER -- CHECKS TO MAKE SURE VALUE WAS REASSIGNED
+            console.log(lastVisit);
+            console.log(localStorage.getItem("recentVisit"));
+            console.log(typeof lastVisit);
 
     }} else {
         document.querySelector(".lastvisit").innerText = "Sorry, your browser does not support Web Storage...";
