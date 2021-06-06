@@ -31,7 +31,7 @@ window.onload = function() {
             document.querySelector(".lastvisit").innerText = daysBetween(newVisit, lastVisit);
 
             // reassign last visit
-            lastVisit = newVisit;
+            let lastVisit = newVisit;
 
             // Store recent visit
             localStorage.setItem("recentVisit", lastVisit);
