@@ -6,6 +6,7 @@ main {
 table {
     margin: 0 auto;
     margin-top: 2rem;
+    box-shadow: 10px 10px 8px #628ca6;
 }
 
 table tbody tr:nth-child(even) {
