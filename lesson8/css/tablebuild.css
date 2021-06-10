@@ -8,11 +8,11 @@ table {
     margin-top: 2rem;
 }
 
-table tr:nth-child(odd) {
+table tbody tr:nth-child(even) {
     background-color: #e7f0ed;
 }
 
-table tr:nth-child(even) {
+table tbody tr:nth-child(odd) {
     background-color: #e7ffed;
 }
 
@@ -30,21 +30,18 @@ th {
     font-weight: bold;
 }
 
-table tr:first-child {
+table thead tr td {
     font-size: 2.5rem;
     font-weight: bold;
+    background-color: #7fb9c2;
 }
 
-table tr:last-child {
+table tfoot tr td {
     font-size: 1rem;
     background-color: #7fb9c2;
 }
 
-table tr:first-child {
-    background-color: #7fb9c2;
-}
-
-table tr:nth-child(7) td:first-child {
+table tbody tr:nth-child(6) td:first-child {
     font-style: italic;
 }
 
