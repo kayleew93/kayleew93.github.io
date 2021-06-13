@@ -306,7 +306,7 @@ input[type="submit"] {
   background-color: #f5ac25;
   padding: 1rem;
   border: 1px solid #cf911e;
-  margin-left: 9rem;
+  margin-left: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #745111;
 }

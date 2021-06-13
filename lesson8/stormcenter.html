@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
+    <script src="/js/hambutton.js" defer></script>
     <script src="js/stormcenter.js" defer></script>
   </head>
   <body>
@@ -44,6 +45,7 @@
     </nav>
     <main>
       <h2>Storm Center</h2>
+      <p>Please fill out the form to share details about storms in your area!</p>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
@@ -72,7 +74,7 @@
           /></label>
 
           <label class="top" for="zipcode"
-            >*Zip Code: <input type="number" name="zipcode" required
+            >*Zip Code: <input type="number" name="zipcode" pattern="[0-9]{5}" required
           /></label>
         </fieldset>
 

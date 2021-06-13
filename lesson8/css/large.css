@@ -41,8 +41,8 @@ figure:hover {
     box-shadow: 0 0 30px #888;
   }
 
-main {
-  max-width: 1700px;
-}
-
+.gallerymain {
+    max-width: 1700px;
+  }
+  
 }
