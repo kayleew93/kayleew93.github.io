@@ -1,0 +1,96 @@
+@media only screen and (min-width: 32.5em) {
+  header img {
+    padding: 0 1rem 0;
+    width: 75px;
+  }
+
+  .motto {
+    padding-left: 0;
+  }
+
+  .primaryNav {
+    display: flex;
+  }
+
+  .primaryNav a:hover {
+    color: #000000;
+    background-color: #e7e5e2;
+  }
+
+  .primaryNav li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .primaryNav a {
+    text-align: center;
+  }
+
+  .primaryNav li:first-child {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding-left: 0rem;
+  }
+
+  .forecastheading {
+    display: block;
+  }
+
+  .stats {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    margin: 0;
+  }
+
+  .weekforecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid #05547e;
+    margin-bottom: 2rem;
+    grid-gap: 1px;
+  }
+
+  .article img {
+    float: right;
+    margin: 1rem;
+  }
+
+  .dayofweek {
+    background-color: #05547e;
+    text-align: center;
+    color: white;
+  }
+
+  .weekforecast p {
+    text-align: center;
+  }
+
+  .weathericon {
+    max-width: 64px;
+    margin: auto;
+  }
+
+  .contactinfo {
+    float: right;
+    margin-right: 10em;
+  }
+
+/*----------- Gallery-7 ----------*/
+.galleryimgs {
+  grid-template-columns: 1fr 1fr;
+  }
+
+/*----------- Storm Center ----------*/
+  form fieldset {
+    margin: 1rem auto 1rem auto;
+  }
+
+  input[type="submit"] {
+    margin-left: 9rem;
+  }
+
+}
