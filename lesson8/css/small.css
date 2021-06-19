@@ -316,6 +316,12 @@ form label.sbs {
   color: rgb(88, 88, 88);
 }
 
+/*--------- Home Page ----------*/
+div.section {
+  background-color: pink;
+}
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix::after {
   content: "";

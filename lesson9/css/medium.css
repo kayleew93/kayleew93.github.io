@@ -79,12 +79,12 @@
     margin-right: 10em;
   }
 
-/*----------- Gallery-7 ----------*/
-.galleryimgs {
-  grid-template-columns: 1fr 1fr;
+  /*----------- Gallery-7 ----------*/
+  .galleryimgs {
+    grid-template-columns: 1fr 1fr;
   }
 
-/*----------- Storm Center ----------*/
+  /*----------- Storm Center ----------*/
   form fieldset {
     margin: 1rem auto 1rem auto;
   }
@@ -92,5 +92,63 @@
   input[type="submit"] {
     margin-left: 9rem;
   }
+
+  /*--------- Home Page ----------*/
+  div.town_section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.town_section section {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  div.town_section section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  div.town_section section img {
+    margin: 0 auto;
+  }
+
+  div.events {
+    margin-bottom: 5rem;
+  }
+
+  div.events img {
+    max-width: 250px;
+    box-shadow: 0px 0px 30px #05547ed3;
+    display: inline;
+    float: left;
+    margin: 0 50px 0 15px;
+  }
+
+  div.events ul {
+    margin-left: 20px;
+    list-style-position: inside;
+    line-height: 1.25;
+  }
+
+  .weather_story {
+    width: fit-content;
+    margin: 0 0 2rem 1rem;
+  }
+
+  .weather_story h3 {
+    font-size: 1.5rem;
+  }
+  
+  .weather_story .home_stats div {
+    font-size: 1rem;
+  }
+  
+  .weather_story .home_stats p {
+    font-size: 1rem;
+  }
+
+
 
 }
