@@ -8,30 +8,35 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const town = jsonObject["towns"];
 
-    const idaho = towns.filter(town => town.name == "Preston" || towns.name == "Soda Springs" || towns.name == "Fish Haven");
+    const idaho = town.filter(town => town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven");
 
-    for (let i = 0; i < prophets.length; i++) {
-      const prophets = jsonObject["prophets"];
+    idaho.forEach(town => {
       let card = document.createElement("section");
-      let h2 = document.createElement("h2");
-      let birthdate = document.createElement("p");
-      let birthplace = document.createElement("p");
+      let name = document.createElement("h2");
+      let motto = document.createElement("h3");
+      let yearfounded = document.createElement("p");
+      let population = document.createElement("p");
+      let rainfall = document.createElement("p");
       let image = document.createElement("img");
 
-      h2.textContent = `${prophets[i].name} ${prophets[i].lastname}`;
-      birthdate.textContent = `Date of Birth: ${prophets[i].birthdate}`;
-      birthplace.textContent = `Place of Birth: ${prophets[i].birthplace}`;
+      name.textContent = `${town.name}`;
+      motto.textContent = `${town.motto}`;
+      yearfounded.textContent = `Founded: ${town.yearFounded}`;
+      population.textContent = `Population: ${town.currentPopulation}`;
+      rainfall.textContent = `Annual Rainfall: ${town.averageRainfall}in`;
       image.setAttribute("src", `image/${town.photo}`);
       image.setAttribute(
         "alt",
-        `${prophets[i].name} ${prophets[i].lastname} - ${prophets[i].order}`
+        `${town.name} photo`
       );
+      console.log(image.src)
+      card.appendChild(name);
+      card.appendChild(motto);
+      card.appendChild(yearfounded);
+      card.appendChild(population);
+      card.appendChild(rainfall);
 
-      card.appendChild(h2);
-      card.appendChild(birthdate);
-      card.appendChild(birthplace);
-      card.appendChild(image);
 
-      document.querySelector("div.cards").appendChild(card);
-    }
+      document.querySelector("div.town_section").appendChild(card);
+    })
   });
