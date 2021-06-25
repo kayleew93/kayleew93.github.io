@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/large.css" />
     <script src="js/preston-10.js" defer></script>
     <script src="js/weatherapi10.js" defer></script>
-    <script src="js/windchill.js" defer></script>
   </head>
   <body>
     <div class="pancake_banner">
@@ -42,7 +41,7 @@
     <nav class="clearfix">
       <ul class="primaryNav">
         <li><a href="#" class="hambutton">&#9776;</a></li>
-        <li><a href="#">Home</a></li>
+        <li><a href="/lesson9/index.html">Home</a></li>
         <li><a href="#" class="active">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
@@ -54,9 +53,20 @@
       <h2>Preston Idaho</h2>
       <div class="herodiv">
         <picture>
-          <source media="(max-width: 500px)" srcset="images/hero-small350x169.jpg" />
-          <source media="(max-width: 800px)" srcset="images/hero-medium500x189.jpg" />
-          <img src="images/hero-large760x287.jpg" width="760" height="287" alt="hero img" />
+          <source
+            media="(max-width: 500px)"
+            srcset="images/heroimgsmall400x195.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/heroimgmed500x202.jpg"
+          />
+          <img
+            src="images/heroimglarge760x307.jpg"
+            width="760"
+            height="307"
+            alt="hero img"
+          />
         </picture>
         <section class="stats">
           <h3>Weather Summary</h3>
@@ -68,51 +78,31 @@
             <li>Wind Speed:</li>
           </ul>
           <ul class="statsvalues">
-            <li>Sunny</li>
+            <li id="weathertype">Sunny</li>
             <li><span id="tempF"></span> &#176;F</li>
             <li><span id="windchill"></span> &#176;F</li>
-            <li>69%</li>
+            <li><span id="humidity"></span>%</li>
             <li><span id="windspeed"></span> mph</li>
           </ul>
         </section>
       </div>
       <h3 class="forecastheading">5 Day Forecast</h3>
       <div class="weekforecast">
-        <div class="dayofweek"><p>Monday</p></div>
-        <div class="dayofweek"><p>Tuesday</p></div>
-        <div class="dayofweek"><p>Wednesday</p></div>
-        <div class="dayofweek"><p>Thursday</p></div>
-        <div class="dayofweek"><p>Friday</p></div>
-        <img
-          class="weathericon"
-          src="images/partly_cloudy.png"
-          alt="weather icon"
-        />
-        <img
-          class="weathericon"
-          src="images/partly_cloudy.png"
-          alt="weather icon"
-        />
-        <img
-          class="weathericon"
-          src="images/partly_cloudy.png"
-          alt="weather icon"
-        />
-        <img
-          class="weathericon"
-          src="images/partly_cloudy.png"
-          alt="weather icon"
-        />
-        <img
-          class="weathericon"
-          src="images/partly_cloudy.png"
-          alt="weather icon"
-        />
-        <p class="dailytemp">76 &#176;F</p>
-        <p class="dailytemp">82 &#176;F</p>
-        <p class="dailytemp">79 &#176;F</p>
-        <p class="dailytemp">76 &#176;F</p>
-        <p class="dailytemp">85 &#176;F</p>
+        <span class="dayofweek" id="dayofweek1"></span>
+        <span class="dayofweek" id="dayofweek2"></span>
+        <span class="dayofweek" id="dayofweek3"></span>
+        <span class="dayofweek" id="dayofweek4"></span>
+        <span class="dayofweek" id="dayofweek5"></span>
+        <img src="" alt="" id="icon1" />
+        <img src="" alt="" id="icon2" />
+        <img src="" alt="" id="icon3" />
+        <img src="" alt="" id="icon4" />
+        <img src="" alt="" id="icon5" />
+        <p><span id="dailytemp1"></span>&#176;F</p>
+        <p><span id="dailytemp2"></span>&#176;F</p>
+        <p><span id="dailytemp3"></span>&#176;F</p>
+        <p><span id="dailytemp4"></span>&#176;F</p>
+        <p><span id="dailytemp5"></span>&#176;F</p>
       </div>
       <div class="article">
         <img
@@ -156,7 +146,10 @@
       </div>
     </main>
     <footer>
-      <p>&copy; Eastern Idaho Times | Kaylee Murray | weather informaton from <a href="https://openweathermap.org/">Open Weather</a></p>
+      <p>
+        &copy; Eastern Idaho Times | Kaylee Murray | weather informaton from
+        <a href="https://openweathermap.org/">Open Weather</a>
+      </p>
       <date></date>
     </footer>
   </body>

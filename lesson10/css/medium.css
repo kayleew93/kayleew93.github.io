@@ -59,16 +59,6 @@
     margin: 1rem;
   }
 
-  .dayofweek {
-    background-color: #05547e;
-    text-align: center;
-    color: white;
-  }
-
-  .weekforecast p {
-    text-align: center;
-  }
-
   .weathericon {
     max-width: 64px;
     margin: auto;
@@ -77,6 +67,22 @@
   .contactinfo {
     float: right;
     margin-right: 10em;
+  }
+  /*----------- Preston Page ----------*/
+  
+  .weekforecast img {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .dayofweek {
+    background-color: #05547e;
+    text-align: center;
+    color: white;
+  }
+
+  .weekforecast p {
+    text-align: center;
   }
 
   /*----------- Gallery-7 ----------*/
