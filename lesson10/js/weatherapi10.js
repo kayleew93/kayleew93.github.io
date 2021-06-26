@@ -11,7 +11,6 @@ const apiURLcurrent =
 fetch(apiURLcurrent)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     document.querySelector("#weathertype").textContent =
       jsObject.weather[0].description;
     document.querySelector("#tempF").textContent =
@@ -36,14 +35,12 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     let day = 1;
     const dayofWeek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
 
     const fiveDayForecast = jsObject.list.filter((forecast) =>
       forecast.dt_txt.includes("18:00:00")
     );
-    console.log(fiveDayForecast);
 
     fiveDayForecast.forEach((x) => {
       let d = new Date(x.dt_txt);
