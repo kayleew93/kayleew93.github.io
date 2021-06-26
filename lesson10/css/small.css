@@ -395,6 +395,10 @@ div.events img {
   font-size: .85rem;
 }
 
+footer a {
+  color: white;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix::after {
   content: "";
