@@ -49,10 +49,17 @@ fetch(apiURL)
       document.querySelector(`#dailytemp${day}`).textContent =
         x.main.temp.toFixed(0);
 
+      let iconimg = document.createElement("img");
+
       const imagesrc = `https://openweathermap.org/img/w/${x.weather[0].icon}.png`;
       const desc = x.weather[0].description;
-      document.querySelector(`#icon${day}`).setAttribute("src", imagesrc);
-      document.querySelector(`#icon${day}`).setAttribute("alt", desc);
+
+      iconimg.setAttribute("src", imagesrc);
+      iconimg.setAttribute("alt", desc);
+
+      document.querySelector(`#icon${day}`).appendChild(iconimg);
+      //document.querySelector(`#icon${day}`).setAttribute("src", imagesrc);
+      //document.querySelector(`#icon${day}`).setAttribute("alt", desc);
 
       day++;
     });

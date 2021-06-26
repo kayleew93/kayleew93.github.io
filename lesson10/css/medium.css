@@ -70,7 +70,7 @@
   }
   /*----------- Preston Page ----------*/
   
-  .weekforecast img {
+  .weekforecast .dailyicon {
     width: auto;
     margin: 0 auto;
   }

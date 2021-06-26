@@ -201,6 +201,13 @@ footer {
   padding: 1rem 0 1rem;
   text-align: center;
 }
+
+footer a {
+  color: white;
+}
+
+
+
 /*--------- Gallery CSS ----------*/
 img[data-src] {
   filter: blur(0.3em);
@@ -393,10 +400,6 @@ div.events img {
 .weather_story .home_stats p {
   margin: 1rem 0;
   font-size: .85rem;
-}
-
-footer a {
-  color: white;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
