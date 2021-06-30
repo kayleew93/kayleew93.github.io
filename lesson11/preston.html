@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eastern Idaho Times - Preston</title>
+    <meta
+      name="description"
+      content="Eastern Idaho Times; Preston Idaho page - weather, articles"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script src="js/preston.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
+  </head>
+  <body>
+    <div class="pancake_banner">
+      <p>
+        Saturday = Preston Pancakes in the Park!<br />&#129374;9:00 a.m.
+        Saturday at the city park pavilion.&#129374;
+      </p>
+    </div>
+    <header>
+      <img src="images/eitlogo.png" alt="eit logo" />
+      <section class="headings">
+        <h1>Eastern Idaho Times</h1>
+        <div class="motto">The source for all your Eastern Idaho answers</div>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <ul class="primaryNav">
+        <li><a href="#" class="hambutton">&#9776;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html" class="active">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class="town_name">Preston, Idaho</h2>
+      <div class="herodiv">
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="images/heroimgsmall400x195.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/heroimgmed500x202.jpg"
+          />
+          <img
+            src="images/heroimglarge760x307.jpg"
+            width="760"
+            height="307"
+            alt="hero img"
+          />
+        </picture>
+        <section class="stats">
+          <h3>Weather Summary</h3>
+          <ul class="statsnames">
+            <li>Currently:</li>
+            <li>Current Temp:</li>
+            <li>Wind Chill:</li>
+            <li>Humidity:</li>
+            <li>Wind Speed:</li>
+          </ul>
+          <ul class="statsvalues">
+            <li id="weathertype">Sunny</li>
+            <li><span id="tempF"></span> &#176;F</li>
+            <li><span id="windchill"></span> &#176;F</li>
+            <li><span id="humidity"></span>%</li>
+            <li><span id="windspeed"></span> mph</li>
+          </ul>
+        </section>
+      </div>
+      <h3 class="forecastheading">5 Day Forecast</h3>
+      <div class="weekforecast">
+        <span class="dayofweek" id="dayofweek1"></span>
+        <span class="dayofweek" id="dayofweek2"></span>
+        <span class="dayofweek" id="dayofweek3"></span>
+        <span class="dayofweek" id="dayofweek4"></span>
+        <span class="dayofweek" id="dayofweek5"></span>
+        <span class="dailyicon" id="icon1"></span>
+        <span class="dailyicon" id="icon2"></span>
+        <span class="dailyicon" id="icon3"></span>
+        <span class="dailyicon" id="icon4"></span>
+        <span class="dailyicon" id="icon5"></span>
+        <p><span id="dailytemp1"></span>&#176;F</p>
+        <p><span id="dailytemp2"></span>&#176;F</p>
+        <p><span id="dailytemp3"></span>&#176;F</p>
+        <p><span id="dailytemp4"></span>&#176;F</p>
+        <p><span id="dailytemp5"></span>&#176;F</p>
+      </div>
+      <div class="article">
+        <img
+          src="images/alexander_schimmeck_prestonarticle.jpg"
+          alt="football game"
+        />
+        <h3>Local High School Team Wins Big at State</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus
+          tellus, ultrices ut tellus sit amet, cursus ultrices ligula. Duis
+          lacinia laoreet ex, ac molestie purus dapibus in. Proin porta, ligula
+          at cursus lacinia, urna nulla eleifend sapien, eu consectetur eros
+          augue sit amet libero. Nunc elementum venenatis nisl, ac eleifend sem
+          viverra ut. Suspendisse potenti. Cras scelerisque enim tellus, vitae
+          commodo dui ultricies in. Curabitur condimentum neque augue, placerat
+          viverra erat dictum vel.
+        </p>
+        <p>
+          Suspendisse vitae mauris ac lacus fermentum consequat. Nulla facilisi.
+          Suspendisse non imperdiet metus, a tincidunt diam. Aliquam ultrices,
+          lacus nec placerat tristique, metus nulla pulvinar nunc, nec sagittis
+          metus mi nec dolor. Mauris faucibus ante ac lacus efficitur, eu
+          euismod erat ultrices...<a href="#">continue to full article</a>
+        </p>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <img class="mapimg" src="images/fakeidahomap.jpg" alt="idaho map" />
+        <div class="contactinfo">
+          <p>&#9743; Phone: (555) 345-6789</p>
+          <p>&#9993; Email: easternidahotimes@email.com</p>
+          <p>&#10163; Address: Preston, ID 83263</p>
+          <img
+            class="sociallogo"
+            src="images/facebook.png"
+            alt="facebook logo"
+          />
+          <img class="sociallogo" src="images/twitter.png" alt="twitter logo" />
+          <img class="sociallogo" src="images/youtube.png" alt="youtube logo" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; Eastern Idaho Times | Kaylee Murray | weather informaton from
+        <a href="https://openweathermap.org/" target="_blank">Open Weather</a>
+      </p>
+      <date></date>
+    </footer>
+  </body>
+</html>

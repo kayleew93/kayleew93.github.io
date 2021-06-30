@@ -1,0 +1,160 @@
+@media only screen and (min-width: 32.5em) {
+  header img {
+    padding: 0 1rem 0;
+    width: 75px;
+  }
+
+  .motto {
+    padding-left: 0;
+  }
+
+  .primaryNav {
+    display: flex;
+  }
+
+  .primaryNav a:hover {
+    color: #000000;
+    background-color: #e7e5e2;
+  }
+
+  .primaryNav li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .primaryNav a {
+    text-align: center;
+  }
+
+  .primaryNav li:first-child {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding-left: 0rem;
+  }
+
+  .forecastheading {
+    display: block;
+  }
+
+  .stats {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    margin: 0;
+  }
+
+  .weekforecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid #05547e;
+    margin-bottom: 2rem;
+    grid-gap: 1px;
+  }
+
+  .article img {
+    float: right;
+    margin: 1rem;
+  }
+
+  .weathericon {
+    max-width: 64px;
+    margin: auto;
+  }
+
+  .contactinfo {
+    float: right;
+    margin-right: 10em;
+  }
+  /*----------- Preston Page ----------*/
+  
+  .weekforecast .dailyicon {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .dayofweek {
+    background-color: #05547e;
+    text-align: center;
+    color: white;
+  }
+
+  .weekforecast p {
+    text-align: center;
+  }
+
+  /*----------- Gallery-7 ----------*/
+  .galleryimgs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*----------- Storm Center ----------*/
+  form fieldset {
+    margin: 1rem auto 1rem auto;
+  }
+
+  input[type="submit"] {
+    margin-left: 9rem;
+  }
+
+  /*--------- Home Page ----------*/
+  div.town_section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.town_section section {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  div.town_section section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  div.town_section section img {
+    margin: 0 auto;
+  }
+
+  div.events {
+    margin-bottom: 5rem;
+  }
+
+  div.events img {
+    max-width: 250px;
+    box-shadow: 0px 0px 30px #05547ed3;
+    display: inline;
+    float: left;
+    margin: 0 50px 0 15px;
+  }
+
+  div.events ul {
+    margin-left: 20px;
+    list-style-position: inside;
+    line-height: 1.25;
+  }
+
+  .weather_story {
+    width: fit-content;
+    margin: 0 0 2rem 1rem;
+  }
+
+  .weather_story h3 {
+    font-size: 1.5rem;
+  }
+  
+  .weather_story .home_stats div {
+    font-size: 1rem;
+  }
+  
+  .weather_story .home_stats p {
+    font-size: 1rem;
+  }
+
+
+
+}
