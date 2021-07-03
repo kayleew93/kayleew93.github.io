@@ -30,7 +30,6 @@ fetch(requestURL)
       
       let events_card = document.createElement("section");
       let events = document.createElement("p");
-      let name2 = document.createElement("h4");
       events.textContent = `${town.events}`;
 
       events_array = events.innerText.split(",");
