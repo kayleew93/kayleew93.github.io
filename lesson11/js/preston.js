@@ -1,4 +1,3 @@
-/* document.getElementById("primaryNav").classList.toggle("hide"); */
 const navbutton = document.querySelector(".hambutton");
 const mainnav = document.querySelector(".primaryNav");
 

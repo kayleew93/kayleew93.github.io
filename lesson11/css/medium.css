@@ -126,7 +126,7 @@
 
   div.events img {
     max-width: 250px;
-    box-shadow: 0px 0px 30px #05547ed3;
+    box-shadow: 0px 0px 15px #02263ad3;
     display: inline;
     float: left;
     margin: 0 50px 0 15px;
@@ -139,12 +139,23 @@
   }
 
   .weather_story {
-    width: fit-content;
-    margin: 0 0 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-gap: 7px;
+    width: 97%;
+    color: #FFFFFF;
+    background-color: #ffffff36;
+    border: none;
+    box-shadow: none;
+    background-image: none;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    margin: 0;
   }
 
   .weather_story h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .weather_story .home_stats div {
@@ -155,6 +166,8 @@
     font-size: 1rem;
   }
 
-
+  .divider {
+    display: inline-block;
+  }
 
 }

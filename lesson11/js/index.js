@@ -1,3 +1,4 @@
+// Data from JSON file
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(requestURL)
@@ -64,3 +65,27 @@ fetch(requestURL)
       document.querySelector("div.town_events").appendChild(events_card);
     });
   });
+
+// Information for current weather
+
+const towns = [5604473, 5607916, 5585010];
+
+towns.forEach((town_id) => {
+  const apiURLcurrent = `https://api.openweathermap.org/data/2.5/weather?id=${town_id}&units=imperial&appid=9cef91c93e68d2c9661f7465a0530962`;
+  fetch(apiURLcurrent)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      document.querySelector(`#tempF_${town_id}`).textContent =
+        jsObject.main.temp.toFixed(0);
+
+      let iconimg = document.createElement("img");
+
+      const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+      const desc = jsObject.weather[0].description;
+
+      iconimg.setAttribute("src", imagesrc);
+      iconimg.setAttribute("alt", desc);
+
+      document.querySelector(`#icon_${town_id}`).appendChild(iconimg);
+    });
+});

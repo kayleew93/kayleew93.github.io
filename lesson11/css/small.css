@@ -330,6 +330,8 @@ div.town_section section {
   margin: 10px;
   padding: 1rem;
   text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #a19682;
 }
 div.town_section section img {
   max-width: 275px;
@@ -366,40 +368,24 @@ div.events img {
 }
 
 .weather_story {
-  display: grid;
-  background-image: linear-gradient(#05547e44,#05547e17);
-  grid-template-columns: 1fr 1fr auto;
-  grid-gap: 10px;;
   align-items: center;
+  padding: .75rem;
+  margin: 1rem 0 2rem 0; 
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-image: linear-gradient(#05547e88, #05547e23);
   border-radius: 5px;
-  box-shadow: 0px 0px 30px #05547ed3;
-  padding: 1rem;
+  border: solid 2px #05547e;
+  box-shadow: 5px 5px 5px #05547e75;
+
 }
 
-.weather_story h3 {
-  grid-column: 1 / 2;
-  padding: .15rem;
-  font-size: 1.1rem;
-  margin-left: .25rem;
+.divider {
+  display: none;
 }
 
-.weather_story img {
+.home_icons img {
   max-width: 64px;
-  margin: 0 auto;
-}
-.weather_story .home_stats {
-  display: inline-flex;
-}
-
-.weather_story .home_stats div {
-  margin: 1rem 0;
-  font-size: .85rem;
-  margin-left: 2px;
-}
-
-.weather_story .home_stats p {
-  margin: 1rem 0;
-  font-size: .85rem;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
