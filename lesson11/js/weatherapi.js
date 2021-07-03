@@ -45,7 +45,7 @@ fetch(apiURLcurrent)
 
   // Information for forecast
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=9cef91c93e68d2c9661f7465a0530962";
+  `https://api.openweathermap.org/data/2.5/forecast?id=${town_id}&units=imperial&appid=9cef91c93e68d2c9661f7465a0530962`;
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -73,8 +73,6 @@ fetch(apiURL)
       iconimg.setAttribute("alt", desc);
 
       document.querySelector(`#icon${day}`).appendChild(iconimg);
-      //document.querySelector(`#icon${day}`).setAttribute("src", imagesrc);
-      //document.querySelector(`#icon${day}`).setAttribute("alt", desc);
 
       day++;
     });
