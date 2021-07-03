@@ -7,9 +7,7 @@ function windChill(tempF, windSpeed) {
 
 // Information for current weather
 
-//Try this:
 town = document.querySelector(".town_name").textContent;
-console.log(town)
 
 if (town == "Preston, Idaho") {
   town_id = 5604473
@@ -22,8 +20,6 @@ if (town == "Soda Springs, Idaho") {
 if (town == "Fish Haven, Idaho") {
   town_id = 5585010
 }
-
-
 
 const apiURLcurrent =
   `https://api.openweathermap.org/data/2.5/weather?id=${town_id}&units=imperial&appid=9cef91c93e68d2c9661f7465a0530962`;

@@ -1,5 +1,19 @@
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
+town = document.querySelector(".town_name").textContent;
+
+if (town == "Preston, Idaho") {
+    town_name = "Preston"
+  }
+  
+  if (town == "Soda Springs, Idaho") {
+    town_name = "Soda Springs"
+  }
+  
+  if (town == "Fish Haven, Idaho") {
+    town_name = "Fish Haven"
+  }
+
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -9,9 +23,7 @@ fetch(requestURL)
 
     const idaho = town.filter(
       (town) =>
-        town.name == "Preston" ||
-        town.name == "Soda Springs" ||
-        town.name == "Fish Haven"
+        town.name == town_name
     );
 
     idaho.forEach((town) => {
@@ -30,10 +42,8 @@ fetch(requestURL)
         ul.appendChild(li);
       });
 
-      name2.textContent = `${town.name}`;
-      events_card.appendChild(name2);
       events_card.appendChild(ul);
 
-      document.querySelector("div.town_events").appendChild(events_card);
+      document.querySelector("div.town_page_events").appendChild(events_card);
     });
   });
