@@ -19,14 +19,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 32.5em)"/>
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:80em)"/>
     <script src="js/hambutton.js" defer></script>
     <script src="js/index.js" defer></script>
   </head>
   <body>
     <header>
-      <img src="/images/eitlogo.png" alt="eit logo" />
+      <img src="/images/eitlogo.png" width="137"
+      height="89" alt="eit logo" />
       <section class="headings">
         <h1>Eastern Idaho Times</h1>
         <div class="motto">The source for all your Eastern Idaho answers</div>
@@ -49,11 +50,11 @@
         <picture>
           <source
             media="(max-width: 500px)"
-            srcset="images/herosmall350x150.jpg"
+            srcset="images/herosmall500x172.jpg"
           />
           <source
             media="(max-width: 800px)"
-            srcset="images/heromedium500x172.jpg"
+            srcset="images/heromedium700x241.jpg"
           />
           <img
             src="images/herolarge760x262.jpg"
@@ -80,13 +81,15 @@
       <div class="town_section"></div>
       <div class="events">
         <h3>Upcoming Events</h3>
-        <img src="images/town_events.jpg" alt="town celebration" />
+        <img src="images/town_events.jpg" width="530" height="852" alt="town celebration" />
         <div class="town_events"></div>
       </div>
 
       <div class="contact">
         <h3>Contact Us</h3>
-        <img class="mapimg" src="images/fakeidahomap.jpg" alt="idaho map" />
+        <img class="mapimg" src="images/fakeidahomap.jpg" width="200"
+        height="185"
+        alt="idaho map" />
         <div class="contactinfo">
           <p>&#9743; Phone: (555) 345-6789</p>
           <p>&#9993; Email: easternidahotimes@email.com</p>
@@ -95,9 +98,13 @@
             class="sociallogo"
             src="images/facebook.png"
             alt="facebook logo"
+            width="64"
+            height="64"
           />
-          <img class="sociallogo" src="images/twitter.png" alt="twitter logo" />
-          <img class="sociallogo" src="images/youtube.png" alt="youtube logo" />
+          <img class="sociallogo" src="images/twitter.png" width="64"
+          height="64" alt="twitter logo" />
+          <img class="sociallogo" src="images/youtube.png" width="64"
+          height="64" alt="youtube logo" />
         </div>
       </div>
     </main>

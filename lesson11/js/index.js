@@ -32,6 +32,8 @@ fetch(requestURL)
       rainfall.textContent = `Annual Rainfall: ${town.averageRainfall}in`;
       image.setAttribute("src", `images/${town.photo}`);
       image.setAttribute("alt", `${town.name} photo`);
+      image.setAttribute("width", "275px");
+      image.setAttribute("height", "206px");
 
       text.appendChild(name);
       text.appendChild(motto);
@@ -85,6 +87,8 @@ towns.forEach((town_id) => {
 
       iconimg.setAttribute("src", imagesrc);
       iconimg.setAttribute("alt", desc);
+      iconimg.setAttribute("width", "64px");
+      iconimg.setAttribute("height", "64px");
 
       document.querySelector(`#icon_${town_id}`).appendChild(iconimg);
     });

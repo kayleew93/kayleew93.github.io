@@ -67,6 +67,8 @@ fetch(apiURL)
 
       iconimg.setAttribute("src", imagesrc);
       iconimg.setAttribute("alt", desc);
+      iconimg.setAttribute("width", "50px");
+      iconimg.setAttribute("height", "50px");
 
       document.querySelector(`#icon${day}`).appendChild(iconimg);
 
