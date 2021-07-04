@@ -26,8 +26,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="images/eitlogo.png" width="137"
-        height="89" alt="eit logo" /></a>
+      <a href="index.html"
+        ><img src="images/eitlogo.png" width="137" height="89" alt="eit logo"
+      /></a>
       <section class="headings">
         <h1>Eastern Idaho Times</h1>
         <div class="motto">The source for all your Eastern Idaho answers</div>
@@ -46,17 +47,15 @@
     </nav>
     <main>
       <h2>Storm Center</h2>
-      <p>Please fill out the form to share details about storms in your area!</p>
+      <p>
+        Please fill out the form to share details about storms in your area!
+      </p>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Personal Information</legend>
           <label class="top"
             >*Full Name:
-            <input
-              type="text"
-              name="fullname"
-              pattern="[a-zA-Z].{4,}"
-              required
+            <input type="text" name="fullname" pattern="[a-zA-Z].{4,}" required
           /></label>
 
           <label class="top"
@@ -65,7 +64,9 @@
           /></label>
 
           <label class="top"
-            >*Phone Number:<br><span class="extrainfo">(format 555-555-5555)</span>
+            >*Phone Number:<br /><span class="extrainfo"
+              >(format 555-555-5555)</span
+            >
             <input
               type="tel"
               name="phone"
@@ -74,7 +75,7 @@
               required
           /></label>
 
-          <label class="top" 
+          <label class="top"
             >*Zip Code: <input type="number" name="zipcode" required
           /></label>
         </fieldset>
@@ -82,20 +83,19 @@
         <fieldset>
           <legend>Storm Details</legend>
           <label class="top"
-            >Storm Date:
-            <input type="date" name="stormdate"
+            >Storm Date: <input type="date" name="stormdate"
           /></label>
 
-          <label class="top" 
+          <label class="top"
             >Storm Type:
             <datalist id="stormtype">
-                <option value="Flash Flood">Flash Flood</option>
-                <option value="Hail">Hail</option>
-                <option value="Hurricane">Hurricane</option>
-                <option value="Thunderstorm">Thunderstorm</option>
-                <option value="Tornado">Tornado</option>
+              <option value="Flash Flood">Flash Flood</option>
+              <option value="Hail">Hail</option>
+              <option value="Hurricane">Hurricane</option>
+              <option value="Thunderstorm">Thunderstorm</option>
+              <option value="Tornado">Tornado</option>
             </datalist>
-            <br><span class="extrainfo">If other, please specify</span>
+            <br /><span class="extrainfo">If other, please specify</span>
             <input type="text" name="stormtype" list="stormtype"
           /></label>
 
@@ -132,7 +132,9 @@
           <label class="top"
             >Storm Region:
             <select name="stormregion" id="selectregion">
-              <option value="" disabled selected>select region... &#9662;</option>
+              <option value="" disabled selected>
+                select region... &#9662;
+              </option>
               <option value="Preston">Preston</option>
               <option value="Soda Springs">Soda Springs</option>
               <option value="Fish Haven">Fish Haven</option>
@@ -157,7 +159,8 @@
           </div>
 
           <label class="top"
-            >Additional Information: <textarea name="additional"></textarea></label>
+            >Additional Information: <textarea name="additional"></textarea>
+          </label>
         </fieldset>
 
         <input type="submit" name="submit" value="Send Form" />

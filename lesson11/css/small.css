@@ -211,8 +211,6 @@ footer a {
   color: white;
 }
 
-
-
 /*--------- Gallery CSS ----------*/
 img[data-src] {
   filter: blur(0.3em);
@@ -257,16 +255,17 @@ form fieldset {
 }
 
 legend {
-  font-family: 'Monserrat', sans-serif;
+  font-family: "Monserrat", sans-serif;
   background-color: #05547e;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
-  }
+}
 
 form label.top,
 form div,
-.slider, form .label {
+.slider,
+form .label {
   display: block;
   padding-top: 1rem;
   color: #05547e;
@@ -282,19 +281,22 @@ form label.top select {
   padding: 0.75rem;
   width: 90%;
   max-width: 20rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .label {
   margin: 0;
 }
 
-form input[type="textarea"] {
+textarea {
   height: 10rem;
+  display: block;
+  width: 95%;
+  max-width: 95%;
 }
 
 form label.top input:required {
-  border-left:#05547e solid 10px ;
+  border-left: #05547e solid 4px;
 }
 
 form label.top input:required:invalid {
@@ -306,11 +308,11 @@ form label.top input:required:invalid {
 }
 
 input[name="stormseverity"] {
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
 }
 
 .extrainfo {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-style: italic;
 }
 
@@ -345,12 +347,12 @@ div.town_section section img {
 }
 
 div.town_section section h2 {
-  padding: .5rem 0 .1rem 0;
+  padding: 0.5rem 0 0.1rem 0;
   color: #05547e;
 }
 
 div.town_section section h3 {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-style: italic;
 }
 
@@ -369,20 +371,19 @@ div.events img {
 
 .events h4 {
   color: #05547e;
-  margin-bottom: .55rem;
+  margin-bottom: 0.55rem;
 }
 
 .weather_story {
   align-items: center;
-  padding: .75rem;
-  margin: 1rem 0 2rem 0; 
+  padding: 0.75rem;
+  margin: 1rem 0 2rem 0;
   display: grid;
   grid-template-columns: repeat(3, auto);
   background-image: linear-gradient(#05547e88, #05547e23);
   border-radius: 5px;
   border: solid 2px #05547e;
   box-shadow: 5px 5px 5px #05547e75;
-
 }
 
 .divider {
