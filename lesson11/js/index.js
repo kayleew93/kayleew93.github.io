@@ -69,7 +69,6 @@ fetch(requestURL)
   });
 
 // Information for current weather
-
 const towns = [5604473, 5607916, 5585010];
 
 towns.forEach((town_id) => {
@@ -79,17 +78,5 @@ towns.forEach((town_id) => {
     .then((jsObject) => {
       document.querySelector(`#tempF_${town_id}`).textContent =
         jsObject.main.temp.toFixed(0);
-
-      let iconimg = document.createElement("img");
-
-      const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-      const desc = jsObject.weather[0].description;
-
-      iconimg.setAttribute("src", imagesrc);
-      iconimg.setAttribute("alt", desc);
-      iconimg.setAttribute("width", "50px");
-      iconimg.setAttribute("height", "50px");
-
-      document.querySelector(`#icon_${town_id}`).appendChild(iconimg);
     });
 });

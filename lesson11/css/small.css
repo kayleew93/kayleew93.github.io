@@ -331,6 +331,9 @@ form label.sbs {
 }
 
 /*--------- Home Page ----------*/
+div.town_page_events {
+  margin-bottom: 2rem;
+}
 div.town_section section {
   border: 2px solid #f5ac25;
   background-color: #f5ac251a;
@@ -377,23 +380,20 @@ div.events img {
 .weather_story {
   align-items: center;
   padding: 0.75rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem auto;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
+  width: max-content;
   background-image: linear-gradient(#05547e88, #05547e23);
   border-radius: 5px;
+  
   border: solid 2px #05547e;
   box-shadow: 5px 5px 5px #05547e75;
 }
 
 .divider {
   display: none;
-}
-
-.home_icons img {
-  width: 50px;
-  margin: 0 auto;
-  max-width: 50px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
