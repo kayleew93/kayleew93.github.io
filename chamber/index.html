@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layton City Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Layton City Chamber of Commerce; home page, weather, events"
+    />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 32.5em)"/>
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:80em)"/>
+    <script src="js/hambutton.js" defer></script>
+    <script src="js/weather.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/coclogo.png" width="64"
+        height="64" alt="chamber of commerce logo" /></a>
+      <section class="headings">
+        <h1>Layton City Chamber of Commerce</h1>
+      </section>
+      
+    <!--IT USeD TO BE HERE-->
+    <nav class="clearfix">
+      <ul class="primaryNav">
+        <li><a href="#" class="hambutton">&#9776;</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="layton.html">Layton</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+</header>
+    <main>
+      <h2>Welcome to Layton City Chamber of Commerce!</h2>
+      <p>Our purpose is to help business owners in our community.</p>
+
+      <li><button type="button">JOIN NOW</button></li>
+      <div class="herodiv">
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="images/herosmall500x172.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/heromedium700x241.jpg"
+          />
+          <img
+            src="images/homeseanmusil.jpg"
+            width="3744"
+            height="5616"
+            alt="hero img"
+          />
+        </picture>
+        <div class="weatherToday">
+          <p>Temperature: <div id="tempF"></div>&#176;F</p>
+          <p>Currently: </p><div id="weatherDesc"></div>
+          <p>Humidity: <div id="humidity"></div>%</p>
+
+        </div>
+        <div class="weather_story">
+          <h3 class="home_statsname">Three Day Forecast</h3>
+          <p class="home_stats"><span id="dayofweek1"></span><span id="temp1"></span> &#176;F</p>
+          <h3 class="home_statsname"><span class="divider"></span></h3>
+          <p class="home_stats"><span id="dayofweek2"></span><span id="temp2"></span> &#176;F</p>
+          <h3 class="home_statsname"><span class="divider"></span></h3>
+          <p class="home_stats"><span id="dayofweek3"></span><span id="temp3"></span> &#176;F</p>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="town_section"></div>
+      <div class="events">
+        <h3>Upcoming Events</h3>
+        <img src="images/town_events.jpg" width="530" height="852" alt="town celebration" />
+        <div class="town_events"></div>
+      </div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus.</p>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <img class="mapimg" src="images/fakeidahomap.jpg" width="200"
+        height="185"
+        alt="idaho map" />
+        <div class="contactinfo">
+          <p>&#9743; Phone: (555) 345-6789</p>
+          <p>&#9993; Email: laytonchamber@laytoncity.com</p>
+          <p>&#10163; Address: Layton, UT 84041</p>
+          <img
+            class="sociallogo"
+            src="images/facebook.png"
+            alt="facebook logo"
+            width="64"
+            height="64"
+          />
+          <img class="sociallogo" src="images/twitter.png" width="64"
+          height="64" alt="twitter logo" />
+          <img class="sociallogo" src="images/youtube.png" width="64"
+          height="64" alt="youtube logo" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; Layton City Chamber of Commerce | Kaylee Murray |
+        <a href="attributions.html"
+          >Attributions</a
+        > | Last Updated: <span id="lastmod"></span></p>
+      <date></date>
+    </footer>
+  </body>
+</html>
