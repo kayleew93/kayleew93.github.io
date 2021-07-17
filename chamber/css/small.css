@@ -1,9 +1,11 @@
-header {
+header, footer {
     background-color: #2C363F;
     color: #F4F5F9;
     align-items: center;
     justify-content: left;
-    display: flex;
+}
+header {
+display: flex;
 }
 
 body {
@@ -12,10 +14,10 @@ body {
 
 a {
     text-decoration: none;
+    color: #F4F5F9;
 }
 
-nav, footer {
-    
+nav {
     margin: 0 auto;
 }
 
