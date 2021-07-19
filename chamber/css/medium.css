@@ -1,28 +1,28 @@
 @media only screen and (min-width: 32.5em) {
-  
-    .primaryNav {
-      display: flex;
-    }
-  
-    .primaryNav a:hover {
-      color: #000000;
-      background-color: #e7e5e2;
-    }
-  
-    .primaryNav li {
-      display: block;
-      flex: 1 1 auto;
-    }
-  
-    .primaryNav a {
-      font-size: 1.2rem;
-      text-align: center;
-      border-top: none;
-    }
-  
-    .primaryNav li:first-child {
-      display: none;
-    }
-  
+  .primaryNav {
+    display: flex;
   }
+
+  .primaryNav a:hover {
+    color: #000000;
+    background-color: #e7e5e2;
+  }
+
+  .primaryNav li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .primaryNav a {
+    font-size: 1.2rem;
+    text-align: center;
+    border-top: none;
+  }
+
+  .primaryNav li:first-child {
+    display: none;
+  }
+  /* --------- Home Page ---------- */
+
   
+}

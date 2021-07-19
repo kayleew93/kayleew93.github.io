@@ -1,3 +1,7 @@
+/* --------- All Pages ---------- */
+a {
+  text-decoration: none;
+}
 header,
 footer {
   background-color: #2c363f;
@@ -5,6 +9,7 @@ footer {
   align-items: center;
   justify-content: left;
 }
+
 header {
   display: flex;
 }
@@ -13,8 +18,8 @@ body {
   background-color: #dddfe6;
 }
 
-.primarynav a {
-  text-decoration: none;
+.primarynav a,
+button a, footer a {
   color: #f4f5f9;
 }
 
@@ -22,9 +27,36 @@ nav {
   margin: 0 auto;
 }
 
+.homeimg {
+  background-image: url("../images/homelarge760x690.jpg");
+
+  min-height: 250px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 button {
   background-color: #f1404b;
-  color: #f4f5f9;
+  border: none;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1,
@@ -109,13 +141,14 @@ label {
 }
 
 /* --------- Home Page ---------- */
-.weatherToday, .weather_story {
-    border: 2px solid #f1404b;
-    padding: .5rem;
-    display: inline-block;
-    background-color: #f1404c17;
+.weatherToday,
+.weather_story {
+  border: 2px solid #f1404b;
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: #f1404c17;
 }
 
 .stats_name {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }

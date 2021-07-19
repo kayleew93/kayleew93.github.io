@@ -1,0 +1,39 @@
+{
+    "boardmembers": [
+      {
+        "position": "President",
+        "name": "Sea Quest",
+        "photo": "president.jpg"
+      },
+      {
+        "position": "Vice President",
+        "name": "Sea Quest",
+        "photo": "vicepresident.jpg"
+      },
+      {
+        "position": "Secretary",
+        "name": "Sea Quest",
+        "photo": "secretary.jpg"
+      },
+      {
+        "position": "Treasurer",
+        "name": "Sea Quest",
+        "photo": "treasurer.jpg"
+      },
+      {
+        "position": "Executive Committee Member",
+        "name": "Sea Quest",
+        "photo": "committee1.jpg"
+      },
+      {
+        "position": "Executive Committee Member",
+        "name": "Sea Quest",
+        "photo": "committee1.jpg"
+      },
+      {
+        "position": "Executive Committee Member",
+        "name": "Sea Quest",
+        "photo": "committee1.jpg"
+      }
+    ]
+  }
