@@ -22,8 +22,14 @@
     <script src="js/hambutton.js" defer></script>
     <script src="js/weather.js" defer></script>
     <script src="js/index.js" defer></script>
+    <script src="js/upcomingevents.js" defer></script>
   </head>
   <body>
+    <div id="weatherAlert">
+      <p class="xbutton">
+        X
+      </p>
+    </div>
     <header>
       <a href="index.html"><img src="images/coclogo.png" width="64"
         height="64" alt="chamber of commerce logo" /></a>
@@ -44,50 +50,55 @@
     </nav>
 </header>
     <main>
-      <h2>Welcome to Layton City Chamber of Commerce!</h2>
-      <p>Our purpose is to help business owners in our community.</p>
-
       <button type="button"><a href="join.html">JOIN NOW</a></button>
       <div class="herodiv">
         <picture>
           <source
             media="(max-width: 500px)"
-            srcset="images/herosmall500x172.jpg"
+            srcset="images/homesmall500x613.jpg"
           />
           <source
             media="(max-width: 800px)"
-            srcset="images/heromedium700x241.jpg"
+            srcset="images/homemedium700x858.jpg"
           />
           <img
-            src="images/homeseanmusil.jpg"
-            width="3744"
-            height="5616"
-            alt="hero img"
+            src="images/homelarge760x931.jpg"
+            width="760"
+            height="931"
+            alt="layton image"
           />
         </picture>
+        <h2>Welcome to Layton City Chamber of Commerce!</h2>
+        <h3>Purpose</h3>
+        <p>Our purpose is to promote and further the interests of businesses within Layton City.</p>
+        <h3>Goals</h3>
+        <p>The Chamber of Commerce seeks to accomplish this by advocating for the needs and interests of the businesses by connecting members with resources and networking opportunities, as well as connecting clients with consumers.</p>
+        <p>Interested in joining? Click <a href="join.html">HERE</a></p>
+        <h2>Weather</h2>
         <div class="weatherToday">
-          <p>Temperature: <div id="tempF"></div>&#176;F</p>
-          <p>Currently: </p><div id="weatherDesc"></div>
-          <p>Humidity: <div id="humidity"></div>%</p>
+          <p><span class="stats_name">Temperature:</span> <span id="tempF"></span>&#176;F</p>
+          <p><span class="stats_name">Currently:</span> <span id="weatherDesc"></span></p>
+          <p><span class="stats_name">Humidity:</span> <span id="humidity"></span>%</p>
+        </div>
+        <h2>Three Day Forecast</h2>
+          <div class="weather_story">
+          <p ><span id="dayofweek1" class="stats_name"></span>&nbsp;<span id="temp1"></span> &#176;F</p>
+          <p ><span id="dayofweek2" class="stats_name"></span>&nbsp;<span id="temp2"></span> &#176;F</p>
+          <p ><span id="dayofweek3" class="stats_name"></span>&nbsp;<span id="temp3"></span> &#176;F</p>
+        </div>
 
-        </div>
-        <div class="weather_story">
-          <h3 class="home_statsname">Three Day Forecast</h3>
-          <p class="home_stats"><span id="dayofweek1"></span><span id="temp1"></span> &#176;F</p>
-          <h3 class="home_statsname"><span class="divider"></span></h3>
-          <p class="home_stats"><span id="dayofweek2"></span><span id="temp2"></span> &#176;F</p>
-          <h3 class="home_statsname"><span class="divider"></span></h3>
-          <p class="home_stats"><span id="dayofweek3"></span><span id="temp3"></span> &#176;F</p>
-        </div>
+        
       </div>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
       <div class="town_section"></div>
       <div class="events">
-        <h3>Upcoming Events</h3>
+        <h2>Upcoming Events</h2>
+          <ul class="upcoming_events"></ul>
         <img src="images/town_events.jpg" width="530" height="852" alt="town celebration" />
         <div class="town_events"></div>
       </div>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga iure porro sapiente? Earum vitae consectetur vero, alias enim voluptas, in adipisci est perspiciatis hic nostrum recusandae quae ab. Doloribus.</p>
+
+      <h2>Featured Companies</h2>
+      
       <div class="contact">
         <h3>Contact Us</h3>
         <img class="mapimg" src="images/fakeidahomap.jpg" width="200"

@@ -1,0 +1,40 @@
+{
+    "events": [
+      {
+        "name": "Book your Summer",
+        "date": "May 15 - August 15",
+        "description": "Summer scholarship for young readers. Register with your local library.",
+        "link": "https://business.davischamberofcommerce.com/events/details/book-your-summer-1433"
+      },
+      {
+        "name": "Golf Tournament",
+        "date": "July 19th",
+        "description": "Sign up for the golf tournament! Last month we had a great experience and are looking forward to another one!",
+        "link": "https://business.davischamberofcommerce.com/events/details/july-2021-golf-tournament-1443"
+      },
+      {
+        "name": "Business Alliance Networking Luncheon",
+        "date": "July 20th",
+        "description": "The Business Alliance group helps members learn how to better grow their business. No RSVP required.",
+        "link": "https://business.davischamberofcommerce.com/events/details/business-alliance-networking-luncheon-1423"
+      },
+      {
+        "name": "Blood Drive",
+        "date": "July 26th",
+        "description": "We need YOU! Come and save lives! Sign up for the blood drive at the Tru Hotel.",
+        "link": "https://business.davischamberofcommerce.com/events/details/blood-drive-at-tru-hotel-community-drive-1453"
+      },
+      {
+        "name": "Active Shooter Preparedness Webinar",
+        "date": "July 27th",
+        "description": "This webinar will help enhance awareness and prepardness for you and your employees in the event of an active shooter event.",
+        "link": "https://business.davischamberofcommerce.com/events/details/active-shooter-preparedness-webinar-1445"
+      },
+      {
+        "name": "Economic Leadership Series: The Leadership Journey",
+        "date": "July 30th",
+        "description": "Are you a CEO or Executive? Come enhance your skills in communication and leadership.",
+        "link": "https://business.davischamberofcommerce.com/events/details/economic-leadership-series-the-leadership-journey-1454"
+      }
+    ]
+  }

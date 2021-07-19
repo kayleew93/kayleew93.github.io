@@ -1,94 +1,121 @@
-header, footer {
-    background-color: #2C363F;
-    color: #F4F5F9;
-    align-items: center;
-    justify-content: left;
+header,
+footer {
+  background-color: #2c363f;
+  color: #f4f5f9;
+  align-items: center;
+  justify-content: left;
 }
 header {
-display: flex;
+  display: flex;
 }
 
 body {
-    background-color: #dddfe6;
+  background-color: #dddfe6;
 }
 
-a {
-    text-decoration: none;
-    color: #F4F5F9;
+.primarynav a {
+  text-decoration: none;
+  color: #f4f5f9;
 }
 
 nav {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 button {
-    background-color: #F1404b;
-    color: #F4F5F9;
+  background-color: #f1404b;
+  color: #f4f5f9;
 }
 
-h1, h2, h3 {
-    font-family: 'Marcellus';
+h1,
+h2,
+h3 {
+  font-family: "Marcellus";
 }
 
 h2 {
-    color: #2C363F;
+  color: #2c363f;
 }
 
 body {
-    font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .primaryNav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .primaryNav a {
-    display: block;
-    text-decoration: none;
-    padding: 0.8rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    font-family: "Nunito", Helvetica, sans-serif;
-    color: #F4F5F9;
-  }
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: "Nunito", Helvetica, sans-serif;
+  color: #f4f5f9;
+}
+
+.primaryNav li {
+  display: none;
+}
+
+.primaryNav li:first-child {
+  display: block;
+}
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #F4F5F9;
-    padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f4f5f9;
+  padding: 1rem;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .sociallogo {
-    width: 3%;
+  width: 3%;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.responsive li {
+  display: block;
 }
 
 /* --------- Membership Join Form ---------- */
 
 label {
-    display: block;
-    padding: .5rem;
+  display: block;
+  padding: 0.5rem;
 }
 
 /* --------- Attributions ---------- */
 .attributions li a {
-    color: #2C363F;
+  color: #2c363f;
+}
+
+/* --------- Home Page ---------- */
+.weatherToday, .weather_story {
+    border: 2px solid #f1404b;
+    padding: .5rem;
+    display: inline-block;
+    background-color: #f1404c17;
+}
+
+.stats_name {
+    font-size: 1.3rem;
 }
