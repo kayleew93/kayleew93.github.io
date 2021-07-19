@@ -81,3 +81,14 @@ h3 {
     font-size: 1.5rem;
 }
 
+/* --------- Membership Join Form ---------- */
+
+label {
+    display: block;
+    padding: .5rem;
+}
+
+/* --------- Attributions ---------- */
+.attributions li a {
+    color: #2C363F;
+}

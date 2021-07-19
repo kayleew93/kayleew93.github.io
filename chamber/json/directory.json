@@ -1,0 +1,53 @@
+{
+    "businesses": [
+      {
+        "name": "Sea Quest",
+        "logo": "seaquestlogo.jpg",
+        "phone": "(801) 900-9049",
+        "link": "https://utah.visitseaquest.com/",
+        "address": "1201 N Hillfield Rd.,\nLayton, UT 84041"
+      },
+      {
+        "name": "Chick-fil-A",
+        "logo": "chickfilalogo.jpg",
+        "phone": "(801) 776-8646",
+        "link": "https://utah.visitseaquest.com/",
+        "address": "651 West Antelope Dr,\nLayton, UT 84041"
+      },
+      {
+        "name": "American First Credit Union",
+        "logo": "afculogo.jpg",
+        "phone": "(801) 564-0951",
+        "link": "https://www.americafirst.com/",
+        "address": "172 N Fort Lane,\nLayton, UT 84041"
+      },
+      {
+        "name": "Intermountain Layton Hospital",
+        "logo": "ihchospitallogo.jpg",
+        "phone": "(801) 387-3787",
+        "link": "https://intermountainhealthcare.org/locations/mckay-dee-hospital/",
+        "address": "201 W Layton Pky Blvd.,\nLayton, UT 84041"
+      },
+      {
+        "name": "Tanner Clinic",
+        "logo": "tannercliniclogo.jpg",
+        "phone": "(801) 773-4840",
+        "link": "https://tannerclinic.com/",
+        "address": "2121 N 1700 W,\nLayton, UT 84041"
+      },
+      {
+        "name": "The Nerve Chiropractic and Wellness",
+        "logo": "thenervelogo.jpg",
+        "phone": "(801) 973-1373",
+        "link": "https://www.thenervechiropractic.com/",
+        "address": "1706 N Heritage Park Blvd #2,\nLayton, UT 84041"
+      },
+      {
+        "name": "Academy Mortgage",
+        "logo": "academylogo.jpg",
+        "phone": "(801) 784-7872",
+        "link": "https://academymortgage.com/about-us/team/AngelaThorpe",
+        "address": "2297 N Hillfield Rd Ste 103,\nLayton UT 84041"
+      }
+    ]
+  }
