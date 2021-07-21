@@ -11,6 +11,7 @@ fetch("/chamber/json/upcomingevents.json")
       let link = document.createElement("a");
       link.setAttribute("href", `${event.link}`);
       link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
       link.innerText = "More info";
       
       name.textContent = `${event.name}`;
