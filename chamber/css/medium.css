@@ -66,7 +66,7 @@
     height: 20rem;
   }
 
-  button {
+  .join_button {
     top: 37%;
   }
 
@@ -114,7 +114,6 @@
 .featured_companies section div, .buscards_g section div {
   height: 7rem;
   width: 7rem;
-  align-content: middle;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
