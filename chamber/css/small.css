@@ -29,9 +29,12 @@ ul {
 
 .primarynav a,
 button a,
-footer a,
 .join_button {
   color: #2c363f;
+}
+
+footer a {
+  color: #dddfe6;
 }
 
 nav {
