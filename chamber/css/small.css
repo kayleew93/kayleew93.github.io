@@ -1,8 +1,4 @@
 /* --------- All Pages ---------- */
-a,
-.primaryNav a {
-  text-decoration: none;
-}
 header,
 footer {
   background-color: #2c363f;
@@ -18,17 +14,20 @@ footer {
 
 header {
   display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 body {
   background-color: #dddfe6;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
-.primarynav a,
+.primaryNav a,
 button a,
 .join_button,
 h2,
@@ -55,11 +54,8 @@ nav {
 
 .homeimg {
   background-image: url("../images/downtownLayton.jpg");
-
   box-shadow: 7px 7px 18px #2c363f;
-
   min-height: 250px;
-
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -81,6 +77,7 @@ nav {
   position: absolute;
   top: 55%;
   left: 50%;
+  text-decoration: none;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -100,15 +97,6 @@ h3 {
   font-family: "Marcellus", "Times New Roman", Times, serif;
 }
 
-body {
-  font-family: "Nunito", Arial, Helvetica, sans-serif;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-
 .primaryNav {
   list-style-type: none;
   margin: 0;
@@ -125,6 +113,7 @@ nav {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   font-family: "Nunito", Helvetica, sans-serif;
   color: #f4f5f9;
+  text-decoration: none;
 }
 
 .primaryNav li {
@@ -202,6 +191,7 @@ button.directory_grid,
 
 label {
   padding: 0.5rem;
+  margin-top: 2rem;
 }
 
 ul li ul {
@@ -410,10 +400,6 @@ form {
 
 .extrainfo {
   font-size: 0.75rem;
-}
-
-label {
-  margin-top: 2rem;
 }
 
 input:focus {
