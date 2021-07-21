@@ -65,23 +65,27 @@
         want networking opportunities and discounts? Become a member of the
         Layton Chamber of Commerce TODAY!
       </p>
-      <p>Please fill out the form.<br>* = required</p>
+      <p>Please fill out the form.<br />* = required</p>
       <form method="get" action="thanks.html" class="membershipform">
         <h3 class="legend">Personal Information</h3>
-        <label class="top"
+        <label
           >First Name:*
           <input type="text" name="fname" pattern="[a-zA-Z].{3,}" required
         /></label>
-        <label class="top"
+        <label
           >Last Name:*
           <input type="text" name="lname" pattern="[a-zA-Z].{3,}" required
         /></label>
-        <label class="top">Title: <input type="text" name="title" /></label>
-        <label class="top"
+        <label>Title: <input type="text" name="title" /></label>
+        <label
           >Email:*
-          <input type="email" name="email" placeholder="abc123@email.com" required
+          <input
+            type="email"
+            name="email"
+            placeholder="abc123@email.com"
+            required
         /></label>
-        <label class="top"
+        <label
           >Cell:<br /><span class="extrainfo">(format 555-555-5555)</span>
           <input
             type="tel"
@@ -90,49 +94,45 @@
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         /></label>
         <h3 class="legend">Business Information</h3>
-        <label class="top"
+        <label
           >Business Name:* <input type="text" name="business" required
         /></label>
-        <label class="top"
-          >Business Address: <input type="text" name="address"
-        /></label>
-        <label class="top"
-          >Business Website: <input type="text" name="website"
-        /></label>
-        <label class="top"
+        <label>Business Address: <input type="text" name="address" /></label>
+        <label>Business Website: <input type="text" name="website" /></label>
+        <label
           >Business Description: <textarea name="additional"></textarea>
         </label>
         <p>Membership Level</p>
         <div class="wrapper">
-          <input
+          <label for="nonprofit"><input
             type="radio"
             id="nonprofit"
             name="membershiplevel"
             value="Non-Profit"
           />
-          <label for="nonprofit">Non-Profit ($100)</label>
+          Non-Profit ($100)</label>
         </div>
         <div class="wrapper">
-          <input
+          <label for="nonprofit"><input
             type="radio"
             id="bronze"
             name="membershiplevel"
             value="Bronze"
           />
-          <label for="nonprofit">Bronze ($200)</label>
+          Bronze ($200)</label>
         </div>
         <div class="wrapper">
-          <input
+          <label for="nonprofit"><input
             type="radio"
             id="silver"
             name="membershiplevel"
             value="Silver"
           />
-          <label for="nonprofit">Silver ($400)</label>
+          Silver ($400)</label>
         </div>
         <div class="wrapper">
-          <input type="radio" id="gold" name="membershiplevel" value="Gold" />
-          <label for="nonprofit">Gold ($1,000)</label>
+          <label for="nonprofit"><input type="radio" id="gold" name="membershiplevel" value="Gold" />
+          Gold ($1,000)</label>
         </div>
 
         <div class="button_right">
