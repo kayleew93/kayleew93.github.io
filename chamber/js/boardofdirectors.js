@@ -12,6 +12,8 @@ fetch("/chamber/json/boardofdirectors.json")
       headshot.setAttribute("src", `images/${member.photo}`);
       headshot.setAttribute("class", "smallimg");
       headshot.setAttribute("alt", `${member.name}'s photo`);
+      headshot.setAttribute("width", "200px");
+      headshot.setAttribute("height", "200px");
       
       name.textContent = `${member.name}`;
       position.textContent = `${member.position}`;

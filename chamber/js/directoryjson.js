@@ -40,6 +40,8 @@ fetch("/chamber/json/directory.json")
       address.textContent = `${business.address}`;
       logo.setAttribute("src", `images/${business.logo}`);
       logo.setAttribute("alt", `${business.name} logo`);
+      logo.setAttribute("width", `${business.width}`);
+      logo.setAttribute("height", `${business.height}`);
       logo.style.width = "100px";
 
       photobox.appendChild(logo);
