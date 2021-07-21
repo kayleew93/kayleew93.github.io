@@ -12,7 +12,7 @@ fetch("/chamber/json/upcomingevents.json")
       link.setAttribute("href", `${event.link}`);
       link.setAttribute("target", "_blank");
       link.setAttribute("rel", "noopener noreferrer");
-      link.innerText = "More info";
+      link.innerText = `${event.link_desc}`;
       
       name.textContent = `${event.name}`;
       date.textContent = `${event.date}`;
