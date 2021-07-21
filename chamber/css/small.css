@@ -15,6 +15,7 @@ a:hover, .upcoming_events li a:hover {
 footer {
   padding: 0.5rem;
   text-align: center;
+  clear: both;
 }
 
 header {
@@ -52,6 +53,8 @@ footer a {
 
 nav {
   margin: 0 auto;
+  grid-column: 1/3;
+  width: 100%;
 }
 
 .logoimg {
@@ -109,11 +112,6 @@ h3 {
   padding: 0;
 }
 
-nav {
-  grid-column: 1/3;
-  width: 100%;
-}
-
 .primaryNav a {
   padding: 0.8rem;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -149,10 +147,6 @@ img {
 
 .smallimg {
   width: auto;
-}
-
-.fish {
-  width: 50%;
 }
 
 .sociallogo {
@@ -219,6 +213,7 @@ ul li ul {
 .fish {
   border-radius: 50%;
   margin-right: 5rem;
+  width: 50%;
 }
 
 /* --------- Home Page ---------- */
@@ -498,10 +493,6 @@ textarea {
 
 .upcoming_events li p {
   margin: 0.25rem 0;
-}
-
-footer {
-  clear: both;
 }
 
 .buscards_l div {
