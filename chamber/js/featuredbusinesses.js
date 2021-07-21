@@ -24,6 +24,7 @@ fetch("/chamber/json/directory.json")
         logo.setAttribute("alt", `${business.name} logo`);
         logo.setAttribute("width", `${business.width}`);
         logo.setAttribute("height", `${business.height}`);
+        logo.setAttribute("loading", "lazy");
         logo.style.width = "100px";
 
         photobox.appendChild(logo);
