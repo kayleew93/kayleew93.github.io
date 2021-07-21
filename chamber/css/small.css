@@ -1,5 +1,6 @@
 /* --------- All Pages ---------- */
-a {
+a,
+.primaryNav a {
   text-decoration: none;
 }
 header,
@@ -29,7 +30,14 @@ ul {
 
 .primarynav a,
 button a,
-.join_button {
+.join_button,
+h2,
+h3,
+h4,
+.attributions li a,
+.xbutton,
+.upcoming_events li a,
+a {
   color: #2c363f;
 }
 
@@ -63,7 +71,7 @@ nav {
 }
 
 .join_button {
-  background-color: #F0885D;
+  background-color: #f0885d;
   font-size: 1.25rem;
   color: #000000;
   border: none;
@@ -82,8 +90,7 @@ nav {
 
 .join_button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-  0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  font-size: 1.5rem;
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   padding: 1.5rem;
 }
 
@@ -91,10 +98,6 @@ h1,
 h2,
 h3 {
   font-family: "Marcellus", "Times New Roman", Times, serif;
-}
-
-h2 {
-  color: #2c363f;
 }
 
 body {
@@ -118,8 +121,6 @@ nav {
 }
 
 .primaryNav a {
-  display: block;
-  text-decoration: none;
   padding: 0.8rem;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   font-family: "Nunito", Helvetica, sans-serif;
@@ -131,7 +132,6 @@ nav {
 }
 
 .primaryNav li:first-child {
-  display: block;
   border: none;
 }
 
@@ -165,33 +165,42 @@ img {
   width: 10%;
 }
 
-h1, h4, .membership_descrip .md_head, h2 {
+h1 {
+ font-size: 1.25rem;
+}
+
+h4,
+.membership_descrip .md_head,
+h2,
+.join_button:hover {
   font-size: 1.5rem;
 }
 
-h3 {
+h3,
+.day_name {
   font-size: 1.75rem;
 }
 
-h2,
-h3,
-h4 {
-  color: #2c363f;
-}
-
-.responsive li {
+.responsive li,
+label,
+.leftimg,
+.featured_companies section img,
+.buscards_g img,
+label,
+input[type="submit"],
+button.directory_grid,
+.primaryNav a,
+.primaryNav li:first-child {
   display: block;
 }
 
 .leftimg {
-  display: block;
   margin: 0 auto;
 }
 
 /* --------- Membership Join Form ---------- */
 
 label {
-  display: block;
   padding: 0.5rem;
 }
 
@@ -201,7 +210,8 @@ ul li ul {
   margin-top: 10px;
 }
 
-.mem_levels, .small_none {
+.mem_levels,
+.small_none {
   display: none;
   box-shadow: none;
 }
@@ -216,14 +226,9 @@ ul li ul {
   margin-right: 5rem;
 }
 
-/* --------- Attributions ---------- */
-.attributions li a {
-  color: #2c363f;
-}
-
 /* --------- Home Page ---------- */
 .weatherToday {
-  border: 2px solid #F0885D;
+  border: 2px solid #f0885d;
   padding: 0.5rem;
   background-image: linear-gradient(180deg, #f0895dbf, #f0895d3f);
   display: grid;
@@ -265,15 +270,13 @@ ul li ul {
 
 .day_name {
   grid-row: 1;
-  font-size: 1.75rem;
 }
 
 .xbutton {
   display: none;
-  background-color: #F0885D;
+  background-color: #f0885d;
   padding: 2rem;
   justify-content: center;
-  color: #2c363f;
 }
 
 .xbutton:hover {
@@ -298,7 +301,6 @@ ul li ul {
 
 .featured_companies section img,
 .buscards_g img {
-  display: block;
   box-shadow: none;
 }
 
@@ -323,8 +325,6 @@ ul li ul {
   padding: 0;
   -webkit-animation: fadeinout 30s infinite;
   animation: fadeinout 30s infinite;
-
-
 }
 .animation li:nth-of-type(2) {
   animation-delay: 5s;
@@ -348,13 +348,13 @@ ul li ul {
     opacity: 0;
   }
   2% {
-    opacity: .5;
+    opacity: 0.5;
   }
   5% {
     opacity: 1;
   }
   14% {
-    opacity: .75;
+    opacity: 0.75;
   }
   16% {
     opacity: 0;
@@ -365,13 +365,13 @@ ul li ul {
     opacity: 0;
   }
   2% {
-    opacity: .5;
+    opacity: 0.5;
   }
   5% {
     opacity: 1;
   }
   14% {
-    opacity: .75;
+    opacity: 0.75;
   }
   16% {
     opacity: 0;
@@ -382,13 +382,13 @@ ul li ul {
     opacity: 0;
   }
   2% {
-    opacity: .5;
+    opacity: 0.5;
   }
   5% {
     opacity: 1;
   }
   14% {
-    opacity: .75;
+    opacity: 0.75;
   }
   16% {
     opacity: 0;
@@ -409,16 +409,15 @@ form {
 }
 
 .extrainfo {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 label {
-  display: block;
   margin-top: 2rem;
 }
 
 input:focus {
-  border-bottom: 2px solid #F0885D;
+  border-bottom: 2px solid #f0885d;
 }
 
 input {
@@ -437,11 +436,10 @@ input {
 input[type="submit"] {
   border: none;
   color: #000000;
-  background-color: #F0885D;
+  background-color: #f0885d;
   border-radius: 5px;
-  padding: .75rem;
+  padding: 0.75rem;
   width: fit-content;
-  display: block;
   margin-top: 20px;
 }
 
@@ -481,16 +479,19 @@ textarea {
   color: #dddfe6;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #dddfe6;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #dddfe6;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #dddfe6;
 }
 
@@ -502,11 +503,6 @@ textarea {
 
 .upcoming_events li h4 {
   margin: 1.75rem 0 0.5rem;
-}
-
-.upcoming_events li a,
-a {
-  color: #2c363f;
 }
 
 .upcoming_events li p {
@@ -529,12 +525,11 @@ footer {
 }
 
 button.directory_grid {
-  display: block;
   position: relative;
   margin-top: 50px;
   left: 20%;
-  padding: .5rem;
-  background-color: #F0885D;
+  padding: 0.5rem;
+  background-color: #f0885d;
   color: #000000;
   border: none;
   border-radius: 5px;
