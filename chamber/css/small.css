@@ -31,7 +31,7 @@ ul {
 button a,
 footer a,
 .join_button {
-  color: #f4f5f9;
+  color: #2c363f;
 }
 
 nav {
@@ -56,7 +56,8 @@ nav {
 }
 
 .join_button {
-  background-color: #f1404b;
+  background-color: #F0885D;
+  color: #000000;
   border: none;
   padding: 1rem;
   text-align: center;
@@ -212,9 +213,9 @@ ul li ul {
 
 /* --------- Home Page ---------- */
 .weatherToday {
-  border: 2px solid #f1404b;
+  border: 2px solid #F0885D;
   padding: 0.5rem;
-  background-image: linear-gradient(180deg, #f1404c4c, #f1404c17);
+  background-image: linear-gradient(180deg, #f0895dbf, #f0895d3f);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -259,10 +260,10 @@ ul li ul {
 
 .xbutton {
   display: none;
-  background-color: #f1404b;
+  background-color: #F0885D;
   padding: 2rem;
   justify-content: center;
-  color: #f4f5f9;
+  color: #2c363f;
 }
 
 .xbutton:hover {
@@ -407,7 +408,7 @@ label {
 }
 
 input:focus {
-  border-bottom: 2px solid #f1404b;
+  border-bottom: 2px solid #F0885D;
 }
 
 input {
@@ -419,14 +420,14 @@ input {
   resize: none;
   border: 0;
   background-color: #455563;
-  border-bottom: 2px solid  #f4f5f9;
+  border-bottom: 2px solid #f4f5f9;
   color: #f4f5f9;
 }
 
 input[type="submit"] {
   border: none;
-  color: #f4f5f9;
-  background-color: #f1404b;
+  color: #000000;
+  background-color: #F0885D;
   border-radius: 5px;
   padding: .75rem;
   width: fit-content;
@@ -495,7 +496,7 @@ textarea {
 
 .upcoming_events li a,
 a {
-  color: #f1404b;
+  color: #2c363f;
 }
 
 .upcoming_events li p {
@@ -523,6 +524,10 @@ button.directory_grid {
   margin-top: 50px;
   left: 20%;
   padding: .5rem;
+  background-color: #F0885D;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
 }
 
 iframe {
