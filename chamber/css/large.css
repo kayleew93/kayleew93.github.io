@@ -4,7 +4,7 @@
     font-size: 2.75rem;
   }
 
-  .weatherToday, .weather_story {
+  .weatherToday, .weather_story, .alfalfa {
     width: 50%;
   }
 
@@ -13,7 +13,7 @@
   }
 
   button.directory_grid {
-    left: 7%;
+    left: 1%;
   }
 
   .join_button {
