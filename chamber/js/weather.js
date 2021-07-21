@@ -31,23 +31,27 @@ fetch(apiURL)
     });
 
     // Information for weather alert
-    if (jsObject.current.temp) {
+    if (jsObject.current.alerts) {
+      document.querySelector(".xbutton").style.display = "block";
+      
       document.querySelector("#weatherAlert").textContent =
-      "Hello, this is a test";
-      //jsObject.alerts.description;
-/*
+      jsObject.alerts.description;
+
       const xbutton = document.querySelector(".xbutton");
 
-      navbutton.addEventListener(
+      xbutton.addEventListener(
         "click",
         () => {
-          mainnav.classList.toggle(".xbutton");
+          xbutton.style.display ='none';
+          //localStorage.setItem("closed", True);
         },
         false
       );
 
       window.onresize = () => {
         if (window.innerWidth > 760) mainnav.classList.remove("hide");
-      };*/
+      };
     }
   });
+
+

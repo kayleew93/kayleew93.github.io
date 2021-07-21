@@ -8,7 +8,7 @@
       name="description"
       content="Join the Layton City Chamber of Commerce"
     />
-    <link rel="shortcut icon" href="images/cocfavicon.ico" />
+    <link rel="shortcut icon" href="images/cocfaviconred.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -50,9 +50,9 @@
       <nav class="clearfix">
         <ul class="primaryNav">
           <li><a href="#" class="hambutton">&#9776;</a></li>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="layton.html">Layton</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -60,64 +60,127 @@
     </header>
     <main>
       <h2>Membership Form</h2>
-      <p>Please fill out the form.</p>
-      <form method="get" action="thanks.html">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label class="top"
-            >*First Name:
-            <input type="text" name="fname" pattern="[a-zA-Z].{3,}" required
-          /></label>
-          <label class="top"
-            >*Last Name:
-            <input type="text" name="lname" pattern="[a-zA-Z].{3,}" required
-          /></label>
-          <label class="top"
-            >Title: <input type="text" name="title"
-          /></label>
-          <label class="top"
-            >Email:
-            <input type="email" name="email" placeholder="abc123@email.com"
-          /></label>
-          <label class="top"
-            >Cell:<br /><span class="extrainfo">(format 555-555-5555)</span>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="555-555-5555"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              required
-          /></label></fieldset>
-          <legend>Business Information</legend>
-        <fieldset>
-          <label class="top"
-          >*Business Name:
-          <input type="text" name="business" required
+      <p>Please fill out the form. * = Required</p>
+      <form method="get" action="thanks.html" class="membershipform">
+        <legend>Personal Information</legend>
+        <label class="top"
+          >First Name:*
+          <input type="text" name="fname" pattern="[a-zA-Z].{3,}" required
         /></label>
         <label class="top"
-        >Business Address:
-        <input type="text" name="address"
-      /></label>
-      <label class="top"
-      >Business Website:
-      <input type="text" name="website"
-    /></label>
-    <label class="top"
-            >Business Description: <textarea name="additional"></textarea>
-          </label>
-        </fieldset>
+          >Last Name:*
+          <input type="text" name="lname" pattern="[a-zA-Z].{3,}" required
+        /></label>
+        <label class="top">Title: <input type="text" name="title" /></label>
+        <label class="top"
+          >Email:
+          <input type="email" name="email" placeholder="abc123@email.com"
+        /></label>
+        <label class="top"
+          >Cell:<br /><span class="extrainfo">(format 555-555-5555)</span>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="555-555-5555"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+        /></label>
+        <legend>Business Information</legend>
+        <label class="top"
+          >Business Name:* <input type="text" name="business" required
+        /></label>
+        <label class="top"
+          >Business Address: <input type="text" name="address"
+        /></label>
+        <label class="top"
+          >Business Website: <input type="text" name="website"
+        /></label>
+        <label class="top"
+          >Business Description: <textarea name="additional"></textarea>
+        </label>
+        <p>Membership Level</p>
+        <div class="wrapper">
+          <input
+            type="radio"
+            id="nonprofit"
+            name="membershiplevel"
+            value="Non-Profit"
+          />
+          <label for="nonprofit">Non-Profit ($100)</label>
+        </div>
+        <div class="wrapper">
+          <input
+            type="radio"
+            id="bronze"
+            name="membershiplevel"
+            value="Bronze"
+          />
+          <label for="nonprofit">Bronze ($200)</label>
+        </div>
+        <div class="wrapper">
+          <input
+            type="radio"
+            id="silver"
+            name="membershiplevel"
+            value="Silver"
+          />
+          <label for="nonprofit">Silver ($400)</label>
+        </div>
+        <div class="wrapper">
+          <input type="radio" id="gold" name="membershiplevel" value="Gold" />
+          <label for="nonprofit">Gold ($1,000)</label>
+        </div>
 
-        <input type="radio" id="nonprofit" name="membershiplevel" value="Non-Profit">
-        <label for="nonprofit">Non-Profit</label>
-        <input type="radio" id="bronze" name="membershiplevel" value="Bronze">
-        <label for="nonprofit">Bronze</label>
-        <input type="radio" id="silver" name="membershiplevel" value="Silver">
-        <label for="nonprofit">Silver</label>
-        <input type="radio" id="gold" name="membershiplevel" value="Gold">
-        <label for="nonprofit">Gold</label>
-        
-        <input type="submit" name="submit" value="Send Form" />
+        <div class="button_right">
+          <input type="submit" name="submit" value="Send Form" />
+        </div>
       </form>
+
+      <h2>Membership Levels</h2>
+      <img src="images/membershiplevels.jpg" alt="membership levels" class="leftimg mem_levels">
+      <ul class="membership_descrip">
+        <li class="md_head">Non-Profit</li>
+        <li>
+          <ul>
+            <li>10% discount to research publications</li>
+            <li>10% discount for business networking events</li>
+            <li>Waitlist opportunity for webinars</li>
+          </ul>
+        </li>
+        <li class="md_head">Bronze</li>
+        <li>
+          <ul>
+            <li>50% discount to research publications</li>
+            <li>50% discount for business networking events</li>
+            <li>25% discount to national chamber of commerce webinars</li>
+            <li>50% discount to local business webinars</li>
+            <li>Access to low-tier discounts from insurance providers</li>
+            <li>Access to low-tier discounts from office suppliers, shipping, and marketing</li>
+          </ul>
+        </li>
+        <li class="md_head">Silver</li>
+        <li>
+          <ul>
+            <li>75% discount to research publications</li>
+            <li>75% discount for business networking events</li>
+            <li>50% discount to national chamber of commerce webinars</li>
+            <li>75% discount to local business webinars</li>
+            <li>Access to mid-tier discounts from insurance providers</li>
+            <li>Access to mid-tier discounts from office suppliers, shipping, and marketing</li>
+          </ul>
+        </li>
+        <li class="md_head">Gold</li>
+        <li>
+          <ul>
+            <li>Free access to research publications</li>
+            <li>Free admission to business networking events</li>
+            <li>Free admission to ALL webinars</li>
+            <li>Access to premium discounts from insurance providers</li>
+            <li>Access to premium discounts from office suppliers, shipping, and marketing</li>
+            
+          </ul>
+        </li>
+      </ul>
     </main>
     <footer>
       <p>

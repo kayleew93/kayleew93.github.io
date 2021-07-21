@@ -10,6 +10,11 @@ footer {
   justify-content: left;
 }
 
+footer {
+  padding: 0.5rem;
+  text-align: center;
+}
+
 header {
   display: flex;
 }
@@ -18,8 +23,13 @@ body {
   background-color: #dddfe6;
 }
 
+ul {
+  list-style: none;
+}
+
 .primarynav a,
-button a, footer a {
+button a,
+footer a {
   color: #f4f5f9;
 }
 
@@ -28,7 +38,9 @@ nav {
 }
 
 .homeimg {
-  background-image: url("../images/homelarge760x690.jpg");
+  background-image: url("../images/downtownLayton.jpg");
+
+  box-shadow: 7px 7px 18px #2c363f;
 
   min-height: 250px;
 
@@ -45,7 +57,7 @@ button {
   text-align: center;
   border-radius: 5px;
   position: absolute;
-  top: 40%;
+  top: 86%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -62,7 +74,7 @@ button:hover {
 h1,
 h2,
 h3 {
-  font-family: "Marcellus";
+  font-family: "Marcellus", "Times New Roman", Times, serif;
 }
 
 h2 {
@@ -70,13 +82,23 @@ h2 {
 }
 
 body {
-  font-family: "Nunito";
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .primaryNav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+nav {
+  grid-column: 1/3;
+  width: 100%;
 }
 
 .primaryNav a {
@@ -94,6 +116,11 @@ body {
 
 .primaryNav li:first-child {
   display: block;
+  border: none;
+}
+
+a.hambutton {
+  border: none;
 }
 
 main {
@@ -104,24 +131,32 @@ main {
 }
 
 img {
-  width: 100%;
+  width: auto;
   height: auto;
+  margin: 0 auto;
+  box-shadow: 7px 7px 18px #2c363f;
 }
 
 .sociallogo {
-  width: 3%;
+  width: 10%;
 }
 
-h1 {
-  font-size: 2.5rem;
+h1, h4, .membership_descrip .md_head {
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.15rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+}
+
+h2,
+h3,
+h4 {
+  color: #2c363f;
 }
 
 .responsive li {
@@ -135,20 +170,332 @@ label {
   padding: 0.5rem;
 }
 
+ul li ul {
+  list-style-type: square;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.mem_levels {
+  width: 7.75rem;
+  box-shadow: none;
+}
+
 /* --------- Attributions ---------- */
 .attributions li a {
   color: #2c363f;
 }
 
 /* --------- Home Page ---------- */
-.weatherToday,
-.weather_story {
+.weatherToday {
   border: 2px solid #f1404b;
   padding: 0.5rem;
-  display: inline-block;
-  background-color: #f1404c17;
+  background-image: linear-gradient(180deg, #f1404c4c, #f1404c17);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: fit-content;
 }
 
 .stats_name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  grid-column: 1;
+  padding: 0.5rem;
+}
+
+.stats_values {
+  grid-column: 2/3;
+}
+
+.big_value {
+  font-size: 4rem;
+  grid-column: 1/3;
+  text-align: center;
+}
+
+.weather_story {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 1rem;
+  grid-gap: 10px;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  background-image: url("/chamber/images/weatherforecast.jpg");
+  border: 2px solid #2c363f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.day_name {
+  grid-row: 1;
+  font-size: 1.75rem;
+}
+
+.xbutton {
+  display: none;
+  background-color: #f1404b;
+  padding: 2rem;
+  justify-content: center;
+  color: #f4f5f9;
+}
+
+.xbutton:hover {
+  cursor: pointer;
+}
+
+.featured_companies section,
+.buscards section {
+  border: 2px solid #2c363f;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  margin: 0.5rem;
+  text-align: center;
+}
+.featured_companies section div,
+.buscards section div {
+  position: relative;
+  width: 7rem;
+  white-space: nowrap;
+}
+
+.featured_companies section img,
+.buscards img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: none;
+}
+
+.animationdiv {
+  height: 15rem;
+}
+
+.animation {
+  position: relative;
+  text-align: center;
+  width: 15rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.animation li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  padding: 0.5rem;
+}
+
+.animation li:nth-of-type(1) {
+  -webkit-animation: fadein 3s ease-in-out 0s infinite alternate; /* delay = -duration * 66%. Note the negative delay to skip the "keyframes delay" */
+  -moz-animation: fadein 3s ease-in-out 0s infinite alternate;
+  animation: fadein 3s ease-in-out 0s infinite alternate;
+}
+.animation li:nth-of-type(2) {
+  -webkit-animation: fadein 4s ease-in-out 6s infinite alternate;
+  -moz-animation: fadein 4s ease-in-out 6s infinite alternate;
+  animation: fadein 4s ease-in-out 6s infinite alternate;
+} /*
+.animation li:nth-of-type(3) {
+  -webkit-animation: fadein 6s ease-in-out 4s infinite alternate; delay = duration * 66% 
+  -moz-animation: fadein 6s ease-in-out 4s infinite alternate;
+  animation: fadein 6s ease-in-out 4s infinite alternate;
+}
+.animation li:nth-of-type(4) {
+-webkit-animation: fadein 6s ease-in-out 8s infinite alternate; delay = duration * 66% 
+-moz-animation: fadein 6s ease-in-out 8s infinite alternate;
+animation: fadein 6s ease-in-out 8s infinite alternate;
+}
+.animation li:nth-of-type(5) {
+-webkit-animation: fadein 6s ease-in-out 12s infinite alternate; 
+-moz-animation: fadein 6s ease-in-out 12s infinite alternate;
+animation: fadein 6s ease-in-out 12s infinite alternate;
+}
+.animation li:nth-of-type(6) {
+  -webkit-animation: fadein 6s ease-in-out 16s infinite alternate; 
+  -moz-animation: fadein 6s ease-in-out 16s infinite alternate;
+  animation: fadein 6s ease-in-out 16s infinite alternate;
+  } */
+
+/* Defines the animation keyframes */
+@-webkit-keyframes fadein {
+  0% {
+    /* "Delay" of the animation - 66% of the duration time (100 - 100/number of elements) */
+    opacity: 0;
+  }
+  66% {
+    /* Actual beginning of the fade in animation */
+    opacity: 1;
+  } /* 
+  76% {          /The fade in animation takes 10% of the duration time
+      opacity: 1;
+  }  */
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  } /*
+  76% {
+      opacity: 1;
+  }  */
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  } /*
+  76% {
+      opacity: 1;
+  }   */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* --------- Contact Us ---------- */
+
+.boardofdirectors img {
+  border-radius: 90px;
+  margin: 0 auto;
+}
+
+form {
+  width: 60%;
+  padding: 1rem 2rem 2rem;
+  background-color: #2c363f;
+  color: #dddfe6;
+}
+
+.extrainfo {
+  font-size: .75rem;
+}
+
+label {
+  display: block;
+  margin-top: 2rem;
+}
+
+input:focus {
+  border-bottom: 2px solid #f1404b;
+}
+
+input {
+  width: 100%;
+  padding: 7px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  background-color: #455563;
+  border-bottom: 2px solid  #f4f5f9;
+  color: #f4f5f9;
+}
+
+input[type="submit"] {
+  border: none;
+  color: #f4f5f9;
+  background-color: #f1404b;
+  border-radius: 5px;
+  padding: .75rem;
+  width: fit-content;
+  display: block;
+  margin-top: 20px;
+}
+
+.button_right {
+  margin-left: auto;
+  margin-right: 0;
+  width: 20%;
+}
+
+
+.wrapper {
+  margin: 15px 10px;
+}
+
+.wrapper input[type="radio"] {
+  display: inline;
+  width: 15px;
+}
+
+.wrapper label {
+  display: inline;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  background-color: #455563;
+  color: #f4f5f9;
+}
+
+.membershipform {
+  margin: 0 auto;
+}
+
+.membershipform legend {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dddfe6;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #dddfe6;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #dddfe6;
+}
+
+/* --------- Attributions ---------- */
+
+.upcoming_events li {
+  list-style-type: none;
+}
+
+.upcoming_events li h4 {
+  margin: 1.75rem 0 0.5rem;
+}
+
+.upcoming_events li a,
+a {
+  color: #f1404b;
+}
+
+.upcoming_events li p {
+  margin: 0.25rem 0;
+}
+
+footer {
+  clear: both;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }

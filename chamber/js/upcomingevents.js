@@ -5,7 +5,7 @@ fetch("/chamber/json/upcomingevents.json")
 
     events.forEach((event) => {
       let card = document.createElement("li");
-      let name = document.createElement("h3");
+      let name = document.createElement("h4");
       let date = document.createElement("p");
       let description = document.createElement("p");
       let link = document.createElement("a");

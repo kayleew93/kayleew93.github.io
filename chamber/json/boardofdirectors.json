@@ -2,38 +2,38 @@
     "boardmembers": [
       {
         "position": "President",
-        "name": "Sea Quest",
+        "name": "Chanelle Jackson",
         "photo": "president.jpg"
       },
       {
         "position": "Vice President",
-        "name": "Sea Quest",
+        "name": "Martin Khan",
         "photo": "vicepresident.jpg"
       },
       {
         "position": "Secretary",
-        "name": "Sea Quest",
+        "name": "Nathan Williams",
         "photo": "secretary.jpg"
       },
       {
         "position": "Treasurer",
-        "name": "Sea Quest",
+        "name": "Nicholas Bryant",
         "photo": "treasurer.jpg"
       },
       {
         "position": "Executive Committee Member",
-        "name": "Sea Quest",
+        "name": "Brianna Hamilton",
         "photo": "committee1.jpg"
       },
       {
         "position": "Executive Committee Member",
-        "name": "Sea Quest",
-        "photo": "committee1.jpg"
+        "name": "Benson Moore",
+        "photo": "committee2.jpg"
       },
       {
         "position": "Executive Committee Member",
-        "name": "Sea Quest",
-        "photo": "committee1.jpg"
+        "name": "Julia Lopez",
+        "photo": "committee3.jpg"
       }
     ]
   }

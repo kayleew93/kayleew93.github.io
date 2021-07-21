@@ -1,10 +1,24 @@
 @media only screen and (min-width: 32.5em) {
+  
+  .primaryNav a.active {
+    color: #dddfe6;
+    font-family: "Marcellus", 'Times New Roman', Times, serif;
+  }
+
+  header {
+    display: flex;
+  }
+
+  nav {
+    width: fit-content;
+  }
+
   .primaryNav {
     display: flex;
   }
 
   .primaryNav a:hover {
-    color: #000000;
+    color: #2c363f;
     background-color: #e7e5e2;
   }
 
@@ -23,6 +37,84 @@
     display: none;
   }
   /* --------- Home Page ---------- */
+  .weathergrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-  
+  .weatherToday, .weather_story {
+    grid-row: 2 / 3;
+    width: 70%;
+  }
+  .featured_companies {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+  }
+
+  .animation {
+    margin-left: 20rem;
+    margin-top: 7rem;
+    width: 25rem;
+  }
+
+  .animationdiv {
+    height: 20rem;
+  }
+
+  button {
+    top: 55%;
+  }
+  /* --------- Layton ---------- */
+
+  .rightimg {
+    float: right;
+  }
+
+  .leftimg {
+    float: left;
+    margin-right: 2.5rem;
+  }
+  /* --------- Directory ---------- */
+  .buscards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 10px;
+  }
+  .boardofdirectors {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    text-align: center;
+  }
+
+  .boardofdirectors section:first-child {
+    grid-column: 1/4;
+    justify-self: center;
+  }
+
+  .boardofdirectors section {
+    margin-bottom: 2rem;
+  }
+
+.featured_companies section div, .buscards section div {
+  height: 7rem;
+  align-content: middle;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.featured_companies section img, .buscards img  {
+  vertical-align: middle;
+}
+
+.sociallogo {
+  max-width: 64px;
+}
+
+.contactinfo {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
 }

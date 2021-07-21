@@ -8,7 +8,7 @@
       name="description"
       content="Contact information for the Layton City Chamber of Commerce"
     />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" href="images/cocfaviconred.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -35,11 +35,11 @@
     <nav class="clearfix">
       <ul class="primaryNav">
         <li><a href="#" class="hambutton">&#9776;</a></li>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="layton.html">Layton</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
 </header>
@@ -47,48 +47,57 @@
 
       <h2>Contact Us</h2>
       <p>
-        Please fill out the form.
+        Please reach out with any questions or feedback you may have. We'd love to hear from you!
       </p>
+      <p>* = Required</p>
       <form method="get" action="thanks.html">
-        <fieldset>
-          <legend>Personal Information</legend>
           <label class="top"
-            >*Full Name:
+            >Full Name:*</label>
             <input type="text" name="fullname" pattern="[a-zA-Z].{4,}" required
-          /></label>
+          />
 
           <label class="top"
-            >Email:
+            >Email:</label>
             <input type="email" name="email" placeholder="abc123@email.com"
-          /></label>
+          />
 
           <label class="top"
-            >*Phone Number:<br /><span class="extrainfo"
+            >Phone Number:*<br /><span class="extrainfo"
               >(format 555-555-5555)</span
-            >
+            ></label>
             <input
               type="tel"
               name="phone"
               placeholder="555-555-5555"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               required
-          /></label>
+          />
 
           <label class="top"
-            >*Zip Code: <input type="number" name="zipcode" required
-          /></label>
-        </fieldset>
+            >Zip Code:* </label><input type="number" name="zipcode" required
+          />
           <label class="top"
-            >Additional Information: <textarea name="additional"></textarea>
-          </label>
-        </fieldset>
+            >Additional Information: </label><textarea name="additional"></textarea>
+          
 
-        <input type="submit" name="submit" value="Send Form" />
+            <div class="button_right"><input type="submit" name="submit" value="Send Form" /></div>
       </form>
 
       <h2>Board of Directors</h2>
       <div class="boardofdirectors"></div>
+      <h3>Contact Us</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96244.39432856724!2d-112.03751936326248!3d41.07691969570843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fdd6d90730f9%3A0x8cb1b07e001b9c18!2sLayton%2C%20UT!5e0!3m2!1sen!2sus!4v1626736164365!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="contactinfo">
+          <section class="contact_info">
+          <p>&#9743; Phone: (555) 345-6789</p>
+          <p>&#9993; Email: laytonchamber@laytoncity.com</p>
+          <p>&#10163; Address: Layton, UT 84041</p>
+          <a href="https://www.facebook.com/" target="_blank"><img class="sociallogo" src="images/facebook.png" alt="facebook logo" width="64" height="64"/></a>
+          <a href="https://twitter.com/" target="_blank"></a><img class="sociallogo" src="images/twitter.png" width="64"
+          height="64" alt="twitter logo" /></a>
+          <a href="https://www.youtube.com/" target="_blank"></a><img class="sociallogo" src="images/youtube.png" width="64"
+          height="64" alt="youtube logo" /></a>
+        </section>
     </main>
     <footer>
       <p>

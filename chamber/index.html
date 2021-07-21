@@ -8,7 +8,7 @@
       name="description"
       content="Layton City Chamber of Commerce; home page, weather, events"
     />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" href="images/cocfaviconred.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -21,15 +21,13 @@
     <link rel="stylesheet" href="css/large.css" media="screen and (min-width:80em)"/>
     <script src="js/hambutton.js" defer></script>
     <script src="js/weather.js" defer></script>
-    <script src="js/index.js" defer></script>
     <script src="js/upcomingevents.js" defer></script>
+    <script src="js/featuredbusinesses.js" defer></script>
   </head>
   <body>
-    <div id="weatherAlert">
-      <p class="xbutton">
-        X
-      </p>
-    </div>
+    <div class="xbutton">&#10005;&nbsp;&nbsp; National Weather Service Alert: <span id="weatherAlert"></span></div>
+      
+    
     <header>
       <a href="index.html"><img src="images/coclogo.png" width="64"
         height="64" alt="chamber of commerce logo" /></a>
@@ -50,29 +48,11 @@
     </nav>
 </header>
     <main>
-      <!--
-      <div class="homeimg">
-        <picture>
-          <source
-            media="(max-width: 500px)"
-            srcset="images/homesmall500x613.jpg"
-          />
-          <source
-            media="(max-width: 800px)"
-            srcset="images/homemedium700x858.jpg"
-          />
-          <img
-            src="images/homelarge760x931.jpg"
-            width="760"
-            height="931"
-            alt="layton image"
-          />
-        </picture></div>-->
         <h2>Welcome to Layton City Chamber of Commerce!</h2>
         
         <div class="homeimg bg1"></div>
 
-        <button type="button"><a href="join.html">JOIN NOW</a></button>
+        <button type="button"><a href="join.html">JOIN NOW!</a></button>
 
         
         <h3>Purpose</h3>
@@ -80,49 +60,44 @@
         <h3>Goals</h3>
         <p>The Chamber of Commerce seeks to accomplish this by advocating for the needs and interests of the businesses by connecting members with resources and networking opportunities, as well as connecting clients with consumers.</p>
         <p>Interested in joining? Click <a href="join.html">HERE</a></p>
+        <section class="weathergrid">
         <h2>Weather</h2>
         <div class="weatherToday">
-          <p><span class="stats_name">Temperature:</span> <span id="tempF"></span>&#176;F</p>
-          <p><span class="stats_name">Currently:</span> <span id="weatherDesc"></span></p>
-          <p><span class="stats_name">Humidity:</span> <span id="humidity"></span>%</p>
+        <span class="stats_values big_value"><span id="tempF"></span>&#176;F</span>
+        <span class="stats_name">Currently:</span> <span class="stats_values"><span id="weatherDesc"></span></span>
+        <span class="stats_name">Humidity:</span> <span class="stats_values"><span id="humidity"></span>%</span>
         </div>
         <h2>Three Day Forecast</h2>
           <div class="weather_story">
-          <p ><span id="dayofweek1" class="stats_name"></span>&nbsp;<span id="temp1"></span> &#176;F</p>
-          <p ><span id="dayofweek2" class="stats_name"></span>&nbsp;<span id="temp2"></span> &#176;F</p>
-          <p ><span id="dayofweek3" class="stats_name"></span>&nbsp;<span id="temp3"></span> &#176;F</p>
+          <span id="dayofweek1" class="day_name"></span><span class="day_values"><span id="temp1"></span> &#176;F</span>
+          <span id="dayofweek2" class="day_name"></span><span class="day_values"><span id="temp2"></span> &#176;F</span>
+          <span id="dayofweek3" class="day_name"></span><span class="day_values"><span id="temp3"></span> &#176;F</span>
         </div>
-
-      <div class="town_section"></div>
-      <div class="events">
+      </section>
         <h2>Upcoming Events</h2>
-          <ul class="upcoming_events"></ul>
-        <img src="images/town_events.jpg" width="530" height="852" alt="town celebration" />
-        <div class="town_events"></div>
+        <img class="leftimg" src="images/golf200x373.jpg" width="200" height="373" alt="golf" />
+        <div class="animationdiv">
+          <ul class="upcoming_events animation"></ul>
       </div>
 
       <h2>Featured Companies</h2>
-      
+      <div class="featured_companies"></div>
+
+
       <div class="contact">
         <h3>Contact Us</h3>
-        <img class="mapimg" src="images/fakeidahomap.jpg" width="200"
+        <img class="mapimg" src="images/fakelaytonmap.jpg" width="200"
         height="185"
-        alt="idaho map" />
+        alt="layton map" />
         <div class="contactinfo">
           <p>&#9743; Phone: (555) 345-6789</p>
           <p>&#9993; Email: laytonchamber@laytoncity.com</p>
           <p>&#10163; Address: Layton, UT 84041</p>
-          <img
-            class="sociallogo"
-            src="images/facebook.png"
-            alt="facebook logo"
-            width="64"
-            height="64"
-          />
-          <img class="sociallogo" src="images/twitter.png" width="64"
-          height="64" alt="twitter logo" />
-          <img class="sociallogo" src="images/youtube.png" width="64"
-          height="64" alt="youtube logo" />
+          <a href="https://www.facebook.com/" target="_blank"><img class="sociallogo" src="images/facebook.png" alt="facebook logo" width="64" height="64"/></a>
+          <a href="https://twitter.com/" target="_blank"></a><img class="sociallogo" src="images/twitter.png" width="64"
+          height="64" alt="twitter logo" /></a>
+          <a href="https://www.youtube.com/" target="_blank"></a><img class="sociallogo" src="images/youtube.png" width="64"
+          height="64" alt="youtube logo" /></a>
         </div>
       </div>
     </main>

@@ -1,0 +1,14 @@
+/* Desktop view */
+@media only screen and (min-width: 80em) {
+button {
+    top: 45%;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  .weatherToday, .weather_story {
+    width: 50%;
+  }
+}
