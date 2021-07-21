@@ -41,6 +41,10 @@ nav {
   margin: 0 auto;
 }
 
+.logoimg {
+  max-width: 64px;
+}
+
 .homeimg {
   background-image: url("../images/downtownLayton.jpg");
 

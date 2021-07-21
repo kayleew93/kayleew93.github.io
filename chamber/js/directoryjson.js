@@ -30,6 +30,7 @@ fetch("/chamber/json/directory.json")
       let link = document.createElement("a");
       link.setAttribute("href", `${business.link}`);
       link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
       link.innerText = "Website";
       let photobox = document.createElement("div");
       let logo = document.createElement("img");
