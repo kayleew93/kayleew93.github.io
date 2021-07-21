@@ -10,6 +10,7 @@ fetch("/chamber/json/boardofdirectors.json")
       let headshot = document.createElement("img");
 
       headshot.setAttribute("src", `images/${member.photo}`);
+      headshot.setAttribute("class", "smallimg");
       headshot.setAttribute("alt", `${member.name}'s photo`);
       
       name.textContent = `${member.name}`;

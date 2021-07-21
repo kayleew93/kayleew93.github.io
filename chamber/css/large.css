@@ -11,4 +11,9 @@
   .homeimg {
     background-size: 75%;
   }
+
+  button.directory_grid {
+    left: 7%;
+  }
+
 }

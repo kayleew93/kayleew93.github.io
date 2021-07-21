@@ -2,17 +2,14 @@
 let directory_toggle = document.querySelector(".directory_grid");
 let buscards = document.querySelector(".buscards");
 
-//directory_toggle.addEventListener("click", () =>
-//{buscards.classList.toggle("directory_list")}, false);
-
 directory_toggle.addEventListener("click", function () {
-  if (directory_toggle.innerText === "list display") {
-    directory_toggle.innerText = "grid display";
+  if (directory_toggle.innerText === "view list") {
+    directory_toggle.innerText = "view grid";
     buscards.classList.toggle("buscards_l");
     buscards.classList.remove("buscards_g");
   } else {
-    directory_toggle.innerText = "grid display";
-    directory_toggle.innerText = "list display";
+    directory_toggle.innerText = "view grid";
+    directory_toggle.innerText = "view list";
     buscards.classList.remove("buscards_l");
     buscards.classList.toggle("buscards_g");
   }

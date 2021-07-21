@@ -1,6 +1,7 @@
 const navbutton = document.querySelector('.hambutton');
 const mainnav = document.querySelector('.primaryNav');
 
+// toggle on responsive class
 navbutton.addEventListener('click', () =>
 {mainnav.classList.toggle('responsive')}, false);
 

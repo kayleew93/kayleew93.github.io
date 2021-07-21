@@ -60,7 +60,12 @@
     </header>
     <main>
       <h2>Membership Form</h2>
-      <p>Please fill out the form. * = Required</p>
+      <p>
+        Are you looking for ways to strengthen and promote your business? Do you
+        want networking opportunities and discounts? Become a member of the
+        Layton Chamber of Commerce TODAY!
+      </p>
+      <p>Please fill out the form.<br>* = required</p>
       <form method="get" action="thanks.html" class="membershipform">
         <legend>Personal Information</legend>
         <label class="top"
@@ -73,8 +78,8 @@
         /></label>
         <label class="top">Title: <input type="text" name="title" /></label>
         <label class="top"
-          >Email:
-          <input type="email" name="email" placeholder="abc123@email.com"
+          >Email:*
+          <input type="email" name="email" placeholder="abc123@email.com" required
         /></label>
         <label class="top"
           >Cell:<br /><span class="extrainfo">(format 555-555-5555)</span>
@@ -83,7 +88,6 @@
             name="phone"
             placeholder="555-555-5555"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
         /></label>
         <legend>Business Information</legend>
         <label class="top"
@@ -137,47 +141,67 @@
       </form>
 
       <h2>Membership Levels</h2>
-      <img src="images/membershiplevels.jpg" alt="membership levels" class="leftimg mem_levels">
+      <img
+        src="images/membershiplevels.jpg"
+        alt="membership levels"
+        class="leftimg mem_levels"
+      />
       <ul class="membership_descrip">
         <li class="md_head">Non-Profit</li>
         <li>
           <ul>
+            <li>Free listing in the Chamber of Commerce directory</li>
             <li>10% discount to research publications</li>
             <li>10% discount for business networking events</li>
             <li>Waitlist opportunity for webinars</li>
+            <li>25% off sponsorship at the local Layton events</li>
           </ul>
         </li>
         <li class="md_head">Bronze</li>
         <li>
           <ul>
+            <li>Free listing in the Chamber of Commerce directory</li>
             <li>50% discount to research publications</li>
             <li>50% discount for business networking events</li>
             <li>25% discount to national chamber of commerce webinars</li>
-            <li>50% discount to local business webinars</li>
+            <li>50% discount to local business training webinars</li>
             <li>Access to low-tier discounts from insurance providers</li>
-            <li>Access to low-tier discounts from office suppliers, shipping, and marketing</li>
+            <li>
+              Access to low-tier discounts from office suppliers, shipping, and
+              marketing
+            </li>
+            <li>50% off sponsorship at the local Layton events</li>
           </ul>
         </li>
         <li class="md_head">Silver</li>
         <li>
           <ul>
+            <li>Free listing in the Chamber of Commerce directory</li>
             <li>75% discount to research publications</li>
             <li>75% discount for business networking events</li>
             <li>50% discount to national chamber of commerce webinars</li>
-            <li>75% discount to local business webinars</li>
+            <li>75% discount to local business training webinars</li>
             <li>Access to mid-tier discounts from insurance providers</li>
-            <li>Access to mid-tier discounts from office suppliers, shipping, and marketing</li>
+            <li>
+              Access to mid-tier discounts from office suppliers, shipping, and
+              marketing
+            </li>
+            <li>75% off sponsorship at the local Layton events</li>
           </ul>
         </li>
         <li class="md_head">Gold</li>
         <li>
           <ul>
+            <li>Free priority listing in the Chamber of Commerce directory</li>
             <li>Free access to research publications</li>
             <li>Free admission to business networking events</li>
             <li>Free admission to ALL webinars</li>
             <li>Access to premium discounts from insurance providers</li>
-            <li>Access to premium discounts from office suppliers, shipping, and marketing</li>
-            
+            <li>
+              Access to premium discounts from office suppliers, shipping, and
+              marketing
+            </li>
+            <li>90% off sponsorship at the local Layton events</li>
           </ul>
         </li>
       </ul>

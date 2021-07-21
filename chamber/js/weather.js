@@ -33,17 +33,16 @@ fetch(apiURL)
     // Information for weather alert
     if (jsObject.current.alerts) {
       document.querySelector(".xbutton").style.display = "block";
-      
+
       document.querySelector("#weatherAlert").textContent =
-      jsObject.alerts.description;
+        jsObject.alerts.description;
 
       const xbutton = document.querySelector(".xbutton");
 
       xbutton.addEventListener(
         "click",
         () => {
-          xbutton.style.display ='none';
-          //localStorage.setItem("closed", True);
+          xbutton.style.display = "none";
         },
         false
       );
@@ -53,5 +52,3 @@ fetch(apiURL)
       };
     }
   });
-
-
