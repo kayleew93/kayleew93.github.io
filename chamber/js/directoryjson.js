@@ -1,10 +1,31 @@
+// change to a list
+let directory_toggle = document.querySelector(".directory_grid");
+let buscards = document.querySelector(".buscards");
+
+//directory_toggle.addEventListener("click", () =>
+//{buscards.classList.toggle("directory_list")}, false);
+
+directory_toggle.addEventListener("click", function () {
+  if (directory_toggle.innerText === "list display") {
+    directory_toggle.innerText = "grid display";
+    buscards.classList.toggle("buscards_l");
+    buscards.classList.remove("buscards_g");
+  } else {
+    directory_toggle.innerText = "grid display";
+    directory_toggle.innerText = "list display";
+    buscards.classList.remove("buscards_l");
+    buscards.classList.toggle("buscards_g");
+  }
+});
+
+// get JSON
+
 fetch("/chamber/json/directory.json")
   .then((response) => response.json())
   .then(function (jsonObject) {
     const businesses = jsonObject["businesses"];
 
     businesses.forEach((business) => {
-        
       let card = document.createElement("section");
       let name = document.createElement("h3");
       let phone = document.createElement("p");
@@ -31,6 +52,6 @@ fetch("/chamber/json/directory.json")
       card.appendChild(address);
       card.appendChild(link);
 
-        document.querySelector("div.buscards").appendChild(card);
-      });
+      document.querySelector("div.buscards").appendChild(card);
     });
+  });

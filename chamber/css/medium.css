@@ -63,7 +63,11 @@
   }
 
   button {
-    top: 55%;
+    top: 37%;
+  }
+
+  .homeimg {
+    background-size: 100%;
   }
   /* --------- Layton ---------- */
 
@@ -76,7 +80,7 @@
     margin-right: 2.5rem;
   }
   /* --------- Directory ---------- */
-  .buscards {
+  .buscards_g {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 10px;
@@ -96,7 +100,7 @@
     margin-bottom: 2rem;
   }
 
-.featured_companies section div, .buscards section div {
+.featured_companies section div, .buscards_g section div {
   height: 7rem;
   align-content: middle;
   justify-content: center;
@@ -104,7 +108,7 @@
   margin: 20px auto;
 }
 
-.featured_companies section img, .buscards img  {
+.featured_companies section img, .buscards_g img  {
   vertical-align: middle;
 }
 

@@ -29,7 +29,8 @@ ul {
 
 .primarynav a,
 button a,
-footer a {
+footer a,
+button {
   color: #f4f5f9;
 }
 
@@ -45,9 +46,13 @@ nav {
   min-height: 250px;
 
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200%;
+}
+
+.buttonparent {
+  display: relative;
 }
 
 button {
@@ -57,7 +62,7 @@ button {
   text-align: center;
   border-radius: 5px;
   position: absolute;
-  top: 86%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -246,7 +251,7 @@ ul li ul {
 }
 
 .featured_companies section,
-.buscards section {
+.buscards_g section {
   border: 2px solid #2c363f;
   padding: 0.5rem;
   background-color: #ffffff;
@@ -254,14 +259,14 @@ ul li ul {
   text-align: center;
 }
 .featured_companies section div,
-.buscards section div {
+.buscards_g section div {
   position: relative;
   width: 7rem;
   white-space: nowrap;
 }
 
 .featured_companies section img,
-.buscards img {
+.buscards_g img {
   display: block;
   position: absolute;
   top: 0;
@@ -291,82 +296,77 @@ ul li ul {
   width: 100%;
   opacity: 0;
   padding: 0.5rem;
-}
+  -webkit-animation: fadeinout 30s infinite;
+  animation: fadeinout 30s infinite;
 
-.animation li:nth-of-type(1) {
-  -webkit-animation: fadein 3s ease-in-out 0s infinite alternate; /* delay = -duration * 66%. Note the negative delay to skip the "keyframes delay" */
-  -moz-animation: fadein 3s ease-in-out 0s infinite alternate;
-  animation: fadein 3s ease-in-out 0s infinite alternate;
+
 }
 .animation li:nth-of-type(2) {
-  -webkit-animation: fadein 4s ease-in-out 6s infinite alternate;
-  -moz-animation: fadein 4s ease-in-out 6s infinite alternate;
-  animation: fadein 4s ease-in-out 6s infinite alternate;
-} /*
+  animation-delay: 5s;
+}
 .animation li:nth-of-type(3) {
-  -webkit-animation: fadein 6s ease-in-out 4s infinite alternate; delay = duration * 66% 
-  -moz-animation: fadein 6s ease-in-out 4s infinite alternate;
-  animation: fadein 6s ease-in-out 4s infinite alternate;
+  animation-delay: 10s;
 }
 .animation li:nth-of-type(4) {
--webkit-animation: fadein 6s ease-in-out 8s infinite alternate; delay = duration * 66% 
--moz-animation: fadein 6s ease-in-out 8s infinite alternate;
-animation: fadein 6s ease-in-out 8s infinite alternate;
+  animation-delay: 15s;
 }
 .animation li:nth-of-type(5) {
--webkit-animation: fadein 6s ease-in-out 12s infinite alternate; 
--moz-animation: fadein 6s ease-in-out 12s infinite alternate;
-animation: fadein 6s ease-in-out 12s infinite alternate;
+  animation-delay: 20s;
 }
 .animation li:nth-of-type(6) {
-  -webkit-animation: fadein 6s ease-in-out 16s infinite alternate; 
-  -moz-animation: fadein 6s ease-in-out 16s infinite alternate;
-  animation: fadein 6s ease-in-out 16s infinite alternate;
-  } */
+  animation-delay: 25s;
+}
 
 /* Defines the animation keyframes */
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeinout {
   0% {
-    /* "Delay" of the animation - 66% of the duration time (100 - 100/number of elements) */
     opacity: 0;
   }
-  66% {
-    /* Actual beginning of the fade in animation */
+  2% {
+    opacity: .5;
+  }
+  5% {
     opacity: 1;
-  } /* 
-  76% {          /The fade in animation takes 10% of the duration time
-      opacity: 1;
-  }  */
-  100% {
-    opacity: 1;
+  }
+  12% {
+    opacity: .75;
+  }
+  16% {
+    opacity: 0;
   }
 }
-@-moz-keyframes fadein {
+@-moz-keyframes fadeinout {
   0% {
     opacity: 0;
   }
-  66% {
+  2% {
+    opacity: .5;
+  }
+  5% {
     opacity: 1;
-  } /*
-  76% {
-      opacity: 1;
-  }  */
-  100% {
-    opacity: 1;
+  }
+  12% {
+    opacity: .75;
+  }
+  16% {
+    opacity: 0;
   }
 }
-@keyframes fadein {
+@keyframes fadeinout {
   0% {
     opacity: 0;
   }
-  66% {
+  2% {
+    opacity: .5;
+  }
+  5% {
     opacity: 1;
-  } /*
-  76% {
-      opacity: 1;
-  }   */
-  100% {
-    opacity: 1;
+  }
+  12% {
+    opacity: .75;
+  }
+  16% {
+    opacity: 0;
   }
 }
 
@@ -491,6 +491,24 @@ a {
 
 footer {
   clear: both;
+}
+
+.buscards_l div {
+  height: 12rem;
+  float: left;
+  clear: both;
+  padding-right: 2rem;
+}
+
+.buscards_l h3 {
+  margin-top: 4rem;
+}
+
+.directory_grid {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  left: 7%;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
